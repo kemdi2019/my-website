@@ -1,0 +1,120 @@
+body {
+  background-color: #F7AD54;
+}
+.firstpage {
+  padding: 200px 0px;
+  text-align: center;
+}
+
+header {
+  border: none;
+  padding: 5px 0px;
+}
+
+.theheader {
+  padding: 0px 60px;
+}
+
+.menu {
+  float: right;
+  padding: 15px 0px;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.dropdown {
+  font-family: "calibri", sans-serif;
+  border: none;
+  background-color: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 14px 10px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.mainimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+.pagetitle {
+  
+  color: white;
+  font-family: 'calibri', sans-serif;
+  font-size: 500%;
+  line-height: 0;
+}
+
+.description {
+  font-family: 'calibri', sans-serif;
+  padding: 20px 0px;
+  letter-spacing: 0.5px;
+}
+
+.regparagraph {
+  font-family: "calibri", sans-serif;
+  color: black;
+}
+
+.btn.viewportfolio {
+  border: none;
+  background-color: white;
+  font-family: "Calibri", sans-serif;
+  padding: 20px 30px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.link {
+  font-family: "calibri", sans-serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.port:hover {
+  color: #F7AD54;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
