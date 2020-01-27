@@ -127,11 +127,14 @@ about page
 body.about {
   background-color: rgb(44, 44, 44);
 }
+
 .abouttitle {
-  color: #F7AD54;
-  font-family: 'impact', sans-serif;
-  letter-spacing: 0.5px;
-  line-height: 0;
+    color: #F7AD54;
+    font-family: 'impact', sans-serif;
+    font-size: 300%;
+    letter-spacing: 4px;
+    line-height: 0;
+    text-align: center;
 }
 
 .aboutdescription {
