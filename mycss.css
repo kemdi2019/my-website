@@ -1,12 +1,14 @@
-body {
+body.one {
   background-color: #F7AD54;
 }
+
 .firstpage {
   padding: 200px 0px;
   text-align: center;
 }
 
 header {
+  background-color: #F7AD54;
   border: none;
   padding: 5px 0px;
 }
@@ -45,7 +47,7 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(211, 211, 211, 0.315);
 }
 
 .dropdown-content a {
@@ -55,14 +57,32 @@ header {
   display: block;
   font-weight: normal;
 }
-
+/*
 .dropdown-content a:hover {
   color: black;
   color: white;
 }
-
+*/
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+.link {
+  font-family: "calibri", sans-serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.port:hover {
+  color: #F7AD54;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .mainimg {
@@ -71,12 +91,11 @@ header {
   margin-right: auto
 }
 
-
 .pagetitle {
-  
   color: white;
-  font-family: 'calibri', sans-serif;
-  font-size: 500%;
+  font-family: 'impact', sans-serif;
+  font-size: 400%;
+  letter-spacing: 5px;
   line-height: 0;
 }
 
@@ -102,19 +121,23 @@ header {
   letter-spacing: 1.5px;
 }
 
-.link {
-  font-family: "calibri", sans-serif;
+/*
+about page
+*/
+body.about {
+  background-color: rgb(44, 44, 44);
 }
-
-a:link, a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.port:hover {
+.abouttitle {
   color: #F7AD54;
+  font-family: 'impact', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 0;
 }
-a:hover {
+
+.aboutdescription {
+  font-family: 'calibri', sans-serif;
+  padding: 20px 200px;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
   color: white;
-  text-decoration: none;
 }
