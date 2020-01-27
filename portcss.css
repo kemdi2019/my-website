@@ -128,9 +128,9 @@ img {
 h1 {
     color: white;
     font-family: 'impact', sans-serif;
-    font-size: 400%;
-    letter-spacing: 5px;
+    font-size: 300%;
+    letter-spacing: 4px;
     line-height: 0;
     text-align: center;
     padding: 40px 0px;
-  }
+ }
