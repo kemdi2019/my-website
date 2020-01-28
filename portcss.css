@@ -118,7 +118,7 @@ img {
     border: 0px;
 }
 
-thetitle {
+github {
     color: white;
     font-family: 'calibri', sans-serif;
     padding-bottom: 10px;
@@ -132,4 +132,5 @@ h1 {
     letter-spacing: 4px;
     line-height: 0;
     padding: 40px 0px;
+    text-align: center;
 }
