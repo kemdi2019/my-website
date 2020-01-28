@@ -57,29 +57,22 @@ header {
     display: block;
 }
   
-  
 .link {
     font-family: "calibri", sans-serif;
 }
-  
-  a:link, a:visited {
+
+a:link, a:visited {
     text-decoration: none;
     color: black;
-  }
-  
-  .port:hover {
+}
+
+.port:hover {
     color: #F7AD54;
-  }
-  a:hover {
+}
+
+a:hover {
     color: white;
     text-decoration: none;
-  }
-
-.abouttitle {
-    color: #F7AD54;
-    font-family: 'impact', sans-serif;
-    letter-spacing: 0.5px;
-    line-height: 0;
 }
 
 .row {
@@ -125,12 +118,18 @@ img {
     border: 0px;
 }
 
+thetitle {
+    color: white;
+    font-family: 'calibri', sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
 h1 {
     color: #F7AD54;
     font-family: 'impact', sans-serif;
     font-size: 300%;
     letter-spacing: 4px;
     line-height: 0;
-    text-align: center;
     padding: 40px 0px;
- }
+}
