@@ -144,3 +144,61 @@ body.about {
   line-height: 1.6;
   color: white;
 }
+
+/*
+portfolio2 css
+*/
+
+.portfoliotitle {
+  font-family: "impact", sans-serif;
+  font-size: 150%;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+  padding: 0px 0px;
+}
+
+.address {
+  font-family: "calibri", sans-serif;
+  font-size: 14px;
+  color: rgb(112, 112, 112);
+}
+
+.address ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.address ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.address li:not(:first-child):before {
+    content: " | ";
+}
+
+.portfolio h3 {
+  font-family: "impact", sans-serif;
+  letter-spacing: 1px;
+  padding: 5px 0px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+}
+
+.portfolio p {
+  color: rgb(112, 112, 112);
+  font-family: "calibri", sans-serif;
+}
+
+.portfolio ul li
+{
+  color: rgb(112, 112, 112);
+  font-family: "calibri", sans-serif;
+  line-height: 1.6;
+}
+
+.portfoliolink:hover {
+  color: #F7AD54;
+}
