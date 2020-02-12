@@ -215,3 +215,7 @@ ul {
   margin-block-start: 5px;
   margin-block-end: 5px;
 }
+
+h3 {
+  color: rgb(42, 68, 119);
+}
