@@ -121,6 +121,27 @@ a:hover {
   letter-spacing: 1.5px;
 }
 
+.description ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.description ul li
+{
+    list-style-type: none;
+    display: inline;
+    padding-right: 12px;
+}
+
+.description li:not(:first-child):before {
+    content: "  ";
+    border-left: 1px solid black;
+    padding-left: 12px;
+}
+
+
+
 /*
 about page
 */
