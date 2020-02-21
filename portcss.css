@@ -66,10 +66,6 @@ a:link, a:visited {
     color: black;
 }
 
-a .github:hover {
-    color: #F7AD54;
-}
-
 a:hover {
     color: white;
     text-decoration: none;
