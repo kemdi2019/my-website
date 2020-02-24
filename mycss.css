@@ -213,8 +213,8 @@ portfolio2 css
   font-family: "impact", sans-serif;
   letter-spacing: 1px;
   padding: 5px 0px;
-  border-top: 3px solid black;
-  border-bottom: 1px solid black;
+  border-top: 3px solid #F7AD54;
+  border-bottom: 1px solid #F7AD54;
 }
 
 .portfolio p {
@@ -242,8 +242,4 @@ p {
 ul {
   margin-block-start: 5px;
   margin-block-end: 5px;
-}
-
-h3 {
-  color: #F7AD54;
 }
