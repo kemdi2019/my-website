@@ -183,7 +183,7 @@ body.about {
 }
 
 /*
-portfolio2 css
+resume css
 */
 
 .portfoliotitle {
@@ -224,7 +224,7 @@ portfolio2 css
   padding-right: 10px;
 }
 
-.portfolio h3 {
+.resume h3 {
   font-family: "impact", sans-serif;
   letter-spacing: 1px;
   padding: 5px 0px;
@@ -232,12 +232,12 @@ portfolio2 css
   border-bottom: 1px solid #F7AD54;
 }
 
-.portfolio p {
+.resume p {
   color: rgb(112, 112, 112);
   font-family: "calibri", sans-serif;
 }
 
-.portfolio ul li
+.resume ul li
 {
   color: rgb(112, 112, 112);
   font-family: "calibri", sans-serif;
