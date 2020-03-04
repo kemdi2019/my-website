@@ -140,22 +140,6 @@ a:hover {
     padding-left: 12px;
 }
 
-.courses ul
-{
-    margin: 0;
-    padding: 0;
-}
-
-.courses ul li
-{
-    list-style-type: none;
-    display: inline;
-}
-
-.courses li:not(:first-child):before {
-    content: " • ";
-}
-
 
 /*
 about page
@@ -257,4 +241,20 @@ p {
 ul {
   margin-block-start: 5px;
   margin-block-end: 5px;
+}
+
+.courses ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.courses ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.courses li:not(:first-child):before {
+    content: " • ";
 }
