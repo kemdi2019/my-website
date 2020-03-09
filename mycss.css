@@ -179,8 +179,8 @@ resume css
 }
 
 .resumeblock p {
-    text-align: center;
-    color: white;
+  text-align: center;
+  font-family: "avenir next", sans-serif;
 }
 
 .portfoliotitle h1 {
