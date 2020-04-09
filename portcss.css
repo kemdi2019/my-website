@@ -1,7 +1,99 @@
-body {
-    background-color: rgb(44, 44, 44);
+*{
+    margin:0;
+    padding:0;
+    font-family: "avenir next", sans-serif;
 }
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+h1{
+    letter-spacing: 1px;
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+}
+
 /* background-color: rgb(44, 44, 44);*/
+#main{
+    position: relative;
+}
+
+nav{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.507);
+    width:100%;
+    position: fixed;
+    top: 0px;
+    padding: 15px 35px;
+}
+
+.menu {
+    float: right;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    font-size: 70%;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    color: white;
+}
+
+.btn:hover {
+    color: rgb(184, 184, 184);
+}
+  
+.dropdown {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(122, 122, 122, 0.418);
+    font-size: 70%;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  
+.link {
+    font-family: "calibri", sans-serif;
+}
+  
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+  
+.port:hover {
+    color: #F7AD54;
+}
+
+a:hover {
+    color: rgb(95, 95, 95);
+    text-decoration: none;
+}
+
 header {
     background-color: #F7AD54;
     border: none;
