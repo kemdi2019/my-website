@@ -265,7 +265,7 @@ section#portfolio p {
 }
 
 /*
-RESUME CSS
+SECTION RESUME CSS
 */
 
 section#resume {
@@ -359,4 +359,107 @@ ul {
 
 .courses li:not(:first-child):before {
     content: " • ";
+}
+
+
+/*
+MAIN RESUME CSS
+*/
+
+.theheader {
+    background-color: black;
+}
+.resumeblock {
+    padding: 15px 5px;
+    background-color: rgb(97, 23, 66);
+    margin-block-end: 1em;
+}
+
+.resumeblock p {
+    text-align: center;
+    color: white;
+}
+
+.portfoliotitle h1 {
+    font-family: "courier new", sans-serif;
+    font-size: 400%;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    padding: 0px 0px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.address {
+    font-family: "avenir next", sans-serif;
+    font-size: 12px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.address ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.address ul li
+{
+    list-style-type: none;
+    display: inline;
+    padding-right: 10px;
+}
+
+.address li:not(:first-child):before {
+    content: "  ";
+    border-left: 2px solid white;
+    padding-left: 14px;
+}
+
+.icons {
+  padding-right: 10px;
+}
+
+.resume h3 {
+    font-family: "courier new", sans-serif;
+    letter-spacing: 1px;
+    padding: 4px 0px;
+    border-top: 3px solid rgb(97, 23, 66);
+    border-bottom: 1px solid rgb(97, 23, 66);
+    color: black;
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+}
+
+.resume p {
+    color: rgb(120, 120, 120);
+    font-family: "avenir next", sans-serif;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    line-height: 1.3;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    font-size: 85%;
+}
+
+.resume ul li {
+    color: rgb(112, 112, 112);
+    font-family: "avenir next", sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.portfoliolink:link {
+    color: white;
+}
+
+.portfoliolink:hover {
+  color: rgb(194, 194, 194);
+}
+
+ul {
+    margin-block-start: 0px;
+    margin-block-end: 5px;
 }
