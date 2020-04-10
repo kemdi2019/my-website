@@ -75,7 +75,6 @@ nav{
     display: block;
 }
   
-  
 .link {
     font-family: "calibri", sans-serif;
 }
@@ -91,75 +90,6 @@ a:link, a:visited {
 
 a:hover {
     color: rgb(95, 95, 95);
-    text-decoration: none;
-}
-
-header {
-    background-color: #F7AD54;
-    border: none;
-    padding: 5px 0px;
-}
-  
-.theheader {
-    padding: 0px 60px;
-}
-  
-.menu {
-    float: right;
-    padding: 15px 0px;
-}
-  
-.btn {
-    border: none;
-    background-color: inherit;
-    font-size: 12px;
-    cursor: pointer;
-    display: inline-block;
-    letter-spacing: 1px;
-}
-  
-.btn:hover {
-    color: white;
-}
-  
-.dropdown {
-    font-family: "calibri", sans-serif;
-    border: none;
-    background-color: inherit;
-    font-size: 12px;
-    cursor: pointer;
-    display: inline-block;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(211, 211, 211, 0.315);
-}
-  
-.dropdown-content a {
-    color: black;
-    padding: 14px 10px;
-    text-decoration: none;
-    display: block;
-    font-weight: normal;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-  
-.link {
-    font-family: "calibri", sans-serif;
-}
-
-a:link, a:visited {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    color: white;
     text-decoration: none;
 }
 
