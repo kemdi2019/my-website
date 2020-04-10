@@ -368,9 +368,10 @@ MAIN RESUME CSS
 
 .theheader {
     background-color: black;
+    padding: 0px 35px; 
 }
 .resumeblock {
-    padding: 15px 5px;
+    padding: 15px 35px;
     background-color: rgb(97, 23, 66);
     margin-block-end: 1em;
 }
@@ -422,6 +423,10 @@ MAIN RESUME CSS
   padding-right: 10px;
 }
 
+.resume {
+    padding: 0px 35px;
+}
+
 .resume h3 {
     font-family: "courier new", sans-serif;
     letter-spacing: 1px;
@@ -452,7 +457,7 @@ MAIN RESUME CSS
 }
 
 .portfoliolink:link {
-    color: white;
+    color: black;
 }
 
 .portfoliolink:hover {
