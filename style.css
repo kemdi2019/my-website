@@ -11,7 +11,7 @@ h1{
 section {
     box-sizing: border-box;
     width: 100%;
-    height:800px;
+    height:100vh;
     float:left;
     padding:52px 35px;
 }
