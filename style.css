@@ -280,10 +280,10 @@ section#resume a:visited{
 }
 
 section#resume a:hover {
-    color: rgb(122, 54, 54);
+    color: rgb(143, 34, 76);
 }
 
-.resume h3 {
+.resumesec h3 {
     font-family: "courier new", sans-serif;
     letter-spacing: 1px;
     padding: 4px 0px;
@@ -294,7 +294,7 @@ section#resume a:hover {
     margin-block-end: 15px;
 }
 
-.resume p {
+.resumesec p {
     color: rgb(112, 112, 112);
     font-family: "avenir next", sans-serif;
     margin-top: 5px;
@@ -304,7 +304,7 @@ section#resume a:hover {
     font-size: 88%;
 }
 
-.resume ul li {
+.resumesec ul li {
     color: rgb(112, 112, 112);
     font-family: "avenir next", sans-serif;
     line-height: 1.4;
@@ -321,7 +321,7 @@ MAIN RESUME CSS
 }
 .resumeblock {
     padding: 15px 35px;
-    background-color: rgb(97, 23, 66);
+    background-color: rgb(143, 34, 76);
     margin-block-end: 1em;
     margin-block-start: 1em;
     margin-left: 35px;
@@ -383,8 +383,8 @@ MAIN RESUME CSS
     font-family: "courier new", sans-serif;
     letter-spacing: 1px;
     padding: 4px 0px;
-    border-top: 3px solid rgb(97, 23, 66);
-    border-bottom: 1px solid rgb(97, 23, 66);
+    border-top: 3px solid rgb(143, 34, 76);
+    border-bottom: 1px solid rgb(143, 34, 76);
     color: black;
     margin-block-start: 15px;
     margin-block-end: 15px;
