@@ -8,6 +8,10 @@ h1{
     letter-spacing: 1px;
 }
 
+.logo {
+    border: 0px;
+}
+
 section {
     box-sizing: border-box;
     width: 100%;
@@ -243,25 +247,17 @@ section#portfolio p {
   flex: 18%;
   max-width: 18%;
   padding-right: 22px;
+  max-height: 60%;
 }
 
 .column img {
-  margin-top: 8px;
+  margin-top: 14px;
   vertical-align: middle;
   width: 100%;
 }
 
 .portfoliosec img {
     border:2px solid rgb(131, 131, 131);
-}
-
-.logo {
-    border: 0px;
-}
-
-.github {
-    padding-bottom: 10px;
-    text-align: center;
 }
 
 /*
