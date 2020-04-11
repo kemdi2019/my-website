@@ -348,11 +348,11 @@ MAIN RESUME CSS
   padding-right: 10px;
 }
 
-.resume {
+.resume2 {
     padding: 0px 35px;
 }
 
-.resume h3 {
+.resume2 h3 {
     font-family: "courier new", sans-serif;
     letter-spacing: 1px;
     padding: 4px 0px;
@@ -363,7 +363,7 @@ MAIN RESUME CSS
     margin-block-end: 15px;
 }
 
-.resume p {
+.resume2 p {
     color: rgb(120, 120, 120);
     font-family: "avenir next", sans-serif;
     margin-top: 5px;
@@ -374,11 +374,11 @@ MAIN RESUME CSS
     font-size: 85%;
 }
 
-.resume ul {
+.resume2 ul {
     padding-left: 40px;
 }
 
-.resume ul li {
+.resume2 ul li {
     color: rgb(112, 112, 112);
     font-family: "avenir next", sans-serif;
     line-height: 1.4;
