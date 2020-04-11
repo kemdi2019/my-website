@@ -290,12 +290,14 @@ MAIN RESUME CSS
 
 .theheader {
     background-color: black;
-    padding: 0px 35px; 
+    padding: 5px 25px; 
 }
 .resumeblock {
     padding: 15px 35px;
     background-color: rgb(97, 23, 66);
     margin-block-end: 1em;
+    margin-block-start: 1em;
+    margin-left: 35px;
 }
 
 .resumeblock p {
