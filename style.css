@@ -235,6 +235,7 @@ section#portfolio p {
 .portfoliosec{
     padding-top: 30px;
     padding: 10px 35px;
+    max-height: 70vh;
 }
 .row {
   display: flex;
@@ -247,7 +248,6 @@ section#portfolio p {
   flex: 18%;
   max-width: 18%;
   padding-right: 22px;
-  max-height: 60%;
 }
 
 .column img {
