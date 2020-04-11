@@ -373,12 +373,15 @@ MAIN RESUME CSS
     font-size: 85%;
 }
 
+.resume ul {
+    padding-left: 20px;
+}
+
 .resume ul li {
     color: rgb(112, 112, 112);
     font-family: "avenir next", sans-serif;
     line-height: 1.4;
     font-size: 14px;
-    padding-left: 35px;
 }
 
 .portfoliolink:link {
