@@ -240,9 +240,9 @@ section#portfolio p {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  flex: 14%;
-  max-width: 14%;
-  padding-right: 14px;
+  flex: 18%;
+  max-width: 18%;
+  padding-right: 22px;
 }
 
 .column img {
