@@ -327,7 +327,7 @@ MAIN RESUME CSS
 .address ul
 {
     margin: 0;
-    padding-left: 35px;
+    padding: 0;
 }
 
 .address ul li
@@ -378,6 +378,7 @@ MAIN RESUME CSS
     font-family: "avenir next", sans-serif;
     line-height: 1.4;
     font-size: 14px;
+    padding-left: 35px;
 }
 
 .portfoliolink:link {
