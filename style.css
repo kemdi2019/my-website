@@ -189,6 +189,7 @@ nav .main-links{
     float: left;
     text-align: left;
     color: white;
+    padding-top: 3px;
 }
 
 .top-container2 a:hover{
