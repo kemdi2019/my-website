@@ -337,15 +337,25 @@ html.is-leaving .transition-swipe{
     border-inline-end: 3px solid #2d99e0;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1260px) {
 
-    .portfolio-nav li{
-        float: left;
-        margin: 0 1.0%;
+    .portfolio #swup{
+        margin-top: 5px;
     }
 
+    .portfolio-subnav ul{
+        height: 96px;
+        min-width: 424px;
+    }
+
+    .portfolio-subnav li{
+        margin-bottom: 10px;
+        margin-top: 2px;
+    }
     .portfolio-subnav{
-        padding-left: 20%;
+        padding-left: 15%;
+        padding-right: 25%;
+        width: 60%;
     }
 }
 
