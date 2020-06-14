@@ -48,7 +48,8 @@ nav .main-div{
     width: 25%;
     min-width: 310px;
     display: flex;
-    align-items: center;position: relative;
+    align-items: center;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -573,3 +574,70 @@ html.is-leaving .transition-swipe{
 
 
 /* SERVICES AND PRICING PAGE */
+
+.hire h1 {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+.hire table a{
+    color: white;
+    line-height: 1;
+}
+.hire table a:hover{
+    color: rgba(255, 255, 255, 0.7);
+}
+table, th {
+  border: 15px solid white;
+  text-align: center;
+  color: white;
+}
+th:first-of-type{
+    background-color: white;
+}
+
+.hire th{
+    background-color: white;
+    color: #2d99e0;
+    height: 40px;
+    width:25%;
+    letter-spacing: 1px;
+}
+
+.hire table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 80px;
+}
+
+.hire td {
+    border-left: 15px solid white;
+    text-align: center;
+    background-color: #2d99e0;
+    height: 80px;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.hire td:first-child{
+    text-align: left;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .hire table {
+        width: 90%;
+        margin: 0 5%;
+        border: 10px solid white;
+    }
+    .hire th {
+        border: 10px solid white;
+    }
+    .hire td {
+        border-left: 10px solid white;
+    }
+}
