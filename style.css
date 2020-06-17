@@ -146,10 +146,14 @@ nav .main-links{
     width: 80%;
     float: left;
     position: absolute;
-    bottom: 2px;
+    bottom: 5px;
     line-height: 1;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 4em;
+    font-size: 5em;
+
+    font-weight: bold;
+    color: black;
+    letter-spacing: 0.5px;
 }
 
 .social-media-container{
@@ -169,12 +173,6 @@ nav .main-links{
     padding-bottom: 20px;
     border-bottom: 5px solid black;
     padding-top: 80px;
-}
-
-.top-container1 a{
-    font-weight: bold;
-    font-size: 1.2em;
-    color: black;
 }
 
 .top-container2{
@@ -254,7 +252,7 @@ nav .main-links{
     float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
     .social-media-container{
         position: absolute;
         margin-top: 15%;
@@ -272,7 +270,7 @@ nav .main-links{
     }
 
     .page-home{
-        padding-top: 150px;
+        padding-top: 180px;
     }
 }
 /*HOME PAGE END*/
