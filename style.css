@@ -470,6 +470,23 @@ html.is-leaving .transition-swipe{
     width: 100%;
 }
 
+/* PORTFOLIO P6 */
+.portfolio-6{
+    width: 85%;
+    padding: 0 7.5%;
+    text-align: center;
+}
+.portfolio-6 div{
+    display: grid;
+    width: 28%;
+    padding: 0 2%;
+    float: left;
+}
+.portfolio-6 img{
+    width: 100%;
+    margin-bottom: 10%;
+}
+
 
 /*RESUME PAGE*/
 .resume{
