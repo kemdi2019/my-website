@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28.42" height="27.006" viewBox="0 0 28.42 27.006">
+  <g id="arrow" transform="translate(1 27.006) rotate(-90)">
+    <path id="Path_1" data-name="Path 1" d="M9.853,0,0,17.078H19.706Z" transform="translate(6.434 4.812)" fill="none" stroke="#1b2321" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Path_2" data-name="Path 2" d="M12.64,0,0,21.89H25.27Z" transform="translate(0.87 0)" fill="none" stroke="#1b2321" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_1" data-name="Line 1" x1="27" transform="translate(0 26.92)" fill="none" stroke="#1b2321" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
