@@ -454,7 +454,7 @@ h2:after {
   padding-left: 0;
 }
 #about.active #height100 {
-  max-height: 100vh;
+  max-height: 600px;
 }
 #about.active .expand {
   display: none;
@@ -642,7 +642,7 @@ nav .reveal span:last-child {
 
 @media (min-height: 880px) and (min-width: 1500px) {
   #about.active #height100 {
-    max-height: 800px;
+    max-height: 700px;
   }
 }
 
@@ -903,6 +903,6 @@ nav .reveal span:last-child {
     min-height: 720px;
   }
   #about.active #height100 {
-    max-height: 500px;
+    max-height: 460px;
   }
 }
