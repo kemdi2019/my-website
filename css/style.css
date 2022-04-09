@@ -853,6 +853,9 @@ nav .reveal span:last-child {
     height: initial;
     padding-bottom: 240px;
   }
+  .menu a {
+    font-size: 16px;
+  }
   .icons.container {
     padding-top: 80px;
   }
