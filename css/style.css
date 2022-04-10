@@ -794,7 +794,7 @@ nav .reveal span:last-child {
   .image,
   .col .image:nth-child(2),
   .col .image:nth-child(3),
-  .page .col:not(:last-child) {
+  .page .col:not(:last-child), .gallery .col {
     width: 100%;
     margin: 0 0 0 0;
   }
@@ -869,6 +869,12 @@ nav .reveal span:last-child {
 }
 
 @media (max-width: 360px) {
+  p {
+    font-size: 13px;
+  }
+  h2:after {
+    margin-left: 30px;
+  }
   .icons.container {
     padding-top: 60px;
   }
@@ -878,6 +884,13 @@ nav .reveal span:last-child {
   }
   .center h3 {
     white-space: normal;
+  }
+  #workinprogress h2 {
+    line-height: 1.2em;
+  }
+  #workinprogress h2::after {
+    width: 70%;
+    bottom: -10px;
   }
 }
 
