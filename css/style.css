@@ -688,6 +688,7 @@ nav .reveal span:last-child {
 @media (max-width: 800px) {
   body.clicked {
     overflow: hidden;
+    max-height: 100vh;
   }
   h1 {
     font-size: 4em;
