@@ -139,21 +139,21 @@ a:visited {
 
 @keyframes reset {
   to {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
 }
 @keyframes btn {
   0% {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
   30% {
-    transform: translateY(20%);
+    transform: translateY(15%);
   }
   70% {
-    transform: translateY(40%);
+    transform: translateY(35%);
   }
   100% {
-    transform: translateY(30%);
+    transform: translateY(25%);
   }
 }
 
