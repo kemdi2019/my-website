@@ -323,6 +323,26 @@ a:visited {
 }
 #title h1 {
   margin-left: 80px;
+  animation: toleft ease 0.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes toleft {
+  0% {
+    margin-left: 0;
+    opacity: 0;
+  }
+  10% {
+    margin-left: 0;
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    margin-left: 80px;
+    opacity: 1;
+  }
 }
 #title .arrow {
   position: absolute;
@@ -755,6 +775,7 @@ nav .reveal span:last-child {
   }
   #title h1 {
     margin-left: 0;
+    animation: none;
   }
   .center {
     margin-top: -30px;
@@ -909,6 +930,15 @@ nav .reveal span:last-child {
   .top.container {
     left: 50%;
     transform: translate(-50%, -60%);
+  }
+  .popup div {
+    width: 800px;
+  }
+  .close {
+    width: 22px;
+  }
+  .popup > img {
+    width: 800px;
   }
 }
 
