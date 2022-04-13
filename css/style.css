@@ -445,7 +445,7 @@ h2:after {
   min-height: 150px;
   max-height: 150px;
   overflow-y: scroll;
-  transition: 0.3s max-height;
+  transition: max-height 0.3s;
 }
 .expand {
   left: 50%;
