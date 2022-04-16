@@ -846,6 +846,10 @@ nav .reveal span:last-child {
   .close {
     width: 25px;
   }
+  #workinprogress {
+    background-attachment: unset;
+    background-position: center left;
+  }
 }
 
 @media (max-width: 600px) {
