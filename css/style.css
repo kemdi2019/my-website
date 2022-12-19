@@ -74,7 +74,7 @@ h4 {
 }
 
 .blue2 {
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   color: #000000;
 }
 
@@ -83,7 +83,7 @@ section {
 }
 
 .container {
-  padding: 60px 12%;
+  padding: 75px 12%;
 }
 
 section > .container {
@@ -120,7 +120,7 @@ a:visited {
 .button a,
 .button a:visited,
 .button p {
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   color: #000000;
   padding: 15px 30px;
   display: inline-block;
@@ -212,6 +212,7 @@ a:visited {
   border-radius: 10px;
   box-shadow: 0 0 10px #0000004a;
   max-height: 1000px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -364,9 +365,6 @@ a:visited {
   position: fixed;
   margin-top: -120px;
 }
-.burger-con.scroll .posrel span {
-  text-shadow: 1px 1px #d1e2eb;
-}
 
 .burger .line {
   height: 1px;
@@ -408,7 +406,7 @@ a:visited {
 #home .divider {
   background-color: #000000;
   width: 432px;
-  bottom: 0;
+  bottom: -3px;
   border-radius: 7px;
 }
 #title {
@@ -472,7 +470,7 @@ a:visited {
 }
 .center h3 {
   padding: 70px 80px;
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   position: relative;
   z-index: 2;
   border-radius: 10px;
@@ -623,7 +621,7 @@ h2:after {
   padding: 0 0 !important;
   width: 40px;
   height: 40px;
-  background-color: #d1e2eb !important;
+  background-color: #d6e4ed !important;
   border: 1px solid #000000;
   border-radius: 50%;
   display: flex;
@@ -643,7 +641,7 @@ h2:after {
   pointer-events: none;
 }
 #about .button a {
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   color: #000000;
 }
 .reveal {
@@ -704,13 +702,15 @@ nav .reveal span:last-child {
   justify-content: space-between;
   width: 0;
   height: 0;
+  opacity: 0;
   overflow-x: hidden;
-  background-color: #d1e2eb;
-  transition: width 0.4s, height 0.6s;
+  background-color: #d6e4ed;
+  transition: width 0.4s, height 0.6s, opacity 0.6s;
 }
 .page.active {
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
 .col {
   width: 300px;
@@ -776,7 +776,7 @@ nav .reveal span:last-child {
   width: 100%;
   z-index: 1000;
   text-align: center;
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   display: none;
   overflow-y: scroll;
   padding-top: 20px;
@@ -890,7 +890,7 @@ nav .reveal span:last-child {
 }
 #pbtn a {
   border: 1px solid #242e37;
-  padding: 15px 20px;
+  padding: 14px 20px;
 }
 
 #workinprogress {
@@ -965,7 +965,8 @@ nav .reveal span:last-child {
 #portfolio > .artsy:first-child {
   top: 0;
   right: 0;
-  max-width: 50%;
+  max-width: 55%;
+  width: 750px;
 }
 #portfolio > .artsy:nth-child(2) {
   bottom: 0;
@@ -1068,7 +1069,7 @@ nav .reveal span:last-child {
 }
 .error-page .center ul {
   padding: 80px;
-  background-color: #d1e2eb;
+  background-color: #d6e4ed;
   width: 70%;
   text-align: left;
   margin-left: auto;
@@ -1119,22 +1120,22 @@ nav .reveal span:last-child {
 
 @media screen and (max-width: 1300px) {
   .gallery .col {
-    width: 240px;
+    width: 250px;
   }
   .gallery .col:first-child {
-    min-width: 240px;
+    min-width: 250px;
   }
   .gallery .image {
-    height: 240px;
+    height: 250px;
   }
   .design-proc ul li {
     padding: 25px 12px;
   }
-}
-@media screen and (max-width: 1100px) {
   .container {
     padding: 60px 7%;
   }
+}
+@media screen and (max-width: 1100px) {
   .hero {
     padding-bottom: 90px;
   }
@@ -1160,12 +1161,30 @@ nav .reveal span:last-child {
   }
 }
 
+@media screen and (max-width: 950px) {
+  .gallery .col {
+    width: 215px;
+  }
+  .gallery .col:first-child {
+    min-width: 215px;
+  }
+  .gallery .image {
+    height: 215px;
+  }
+}
+
 @media screen and (max-width: 890px) {
   #home .artsy {
     right: -60px;
   }
   #home .menu .artsy {
     right: unset;
+  }
+  #portfolio > .artsy:first-child {
+    max-width: unset;
+    right: unset;
+    left: 50%;
+    width: 600px;
   }
   #portfolio > .artsy:nth-child(2) {
     display: none;
@@ -1193,15 +1212,6 @@ nav .reveal span:last-child {
   }
   .rockon:hover svg {
     transform: translateY(10px);
-  }
-  .gallery .col {
-    width: 220px;
-  }
-  .gallery .col:first-child {
-    min-width: 220px;
-  }
-  .gallery .image {
-    height: 220px;
   }
   .design-proc ul {
     flex-direction: column;
@@ -1502,8 +1512,8 @@ nav .reveal span:last-child {
 
 @media screen and (max-width: 500px) {
   body.scrolled {
-    background-color: #d1e2eb;
-    background: linear-gradient(to bottom, #d1e2eb 50%, #242e37 50%);
+    background-color: #d6e4ed;
+    background: linear-gradient(to bottom, #d6e4ed 50%, #242e37 50%);
   }
   body.clicked,
   body.scrolled.clicked {
@@ -1527,7 +1537,7 @@ nav .reveal span:last-child {
     width: 100%;
     right: unset;
     left: 0;
-    background: #d1e2eb;
+    background: #d6e4ed;
     padding: 40px 20px;
     top: 0;
     margin-top: 0;
@@ -1549,7 +1559,7 @@ nav .reveal span:last-child {
     display: none;
   }
   .popup .popup-img {
-    max-height: 390px;
+    max-height: 370px;
     min-height: 200px;
   }
   .popup .close-div {
@@ -1592,9 +1602,7 @@ nav .reveal span:last-child {
     transform: translateY(0);
   }
   #portfolio > .artsy:first-child {
-    max-width: unset;
-    width: 450px;
-    right: unset;
+    width: 500px;
     left: 55%;
   }
   #home .artsy.mobile.one {
@@ -1623,7 +1631,7 @@ nav .reveal span:last-child {
     padding: 15px 20px;
   }
   #pbtn a {
-    padding: 15px 15px;
+    padding: 13px 15px;
   }
   .button img {
     height: 14px;
@@ -1681,9 +1689,6 @@ nav .reveal span:last-child {
   #title .arrow {
     margin-top: 80px;
   }
-  #about.active #height100 {
-    max-height: 1220px;
-  }
   .rockon-alt {
     left: -9%;
   }
@@ -1697,6 +1702,10 @@ nav .reveal span:last-child {
 }
 
 @media screen and (max-width: 360px) {
+  html,
+  body {
+    min-width: 370px;
+  }
   p {
     font-size: 13px;
   }
@@ -1704,11 +1713,20 @@ nav .reveal span:last-child {
     padding-top: 60px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 2px;
   }
   .center h3 {
     white-space: normal;
+  }
+  #home .artsy.mobile.one {
+    left: 110px;
+  }
+  #home .artsy.mobile.two {
+    left: 220px;
+  }
+  #home .artsy.mobile.three {
+    left: 80px;
   }
   #about.active #height100 {
     max-height: 1300px;
@@ -1738,12 +1756,6 @@ nav .reveal span:last-child {
   }
 }
 
-@media (min-width: 1100px) and (max-width: 1390px) {
-  .design-proc ul li:after {
-    right: -17px;
-  }
-}
-
 @media screen and (min-width: 1300px) {
   #height100 {
     transition: max-height 0.45s;
@@ -1762,7 +1774,7 @@ nav .reveal span:last-child {
     right: 20%;
   }
   .popup .popup-img {
-    min-height: 410px;
+    min-height: 400px;
   }
 }
 
@@ -1838,8 +1850,8 @@ nav .reveal span:last-child {
     margin-top: 5px;
   }
   .popup .popup-img {
-    min-height: 280px;
-    max-height: 340px;
+    min-height: 220px;
+    max-height: 330px;
   }
   #height100,
   #about.active #height100 {
@@ -1902,7 +1914,7 @@ nav .reveal span:last-child {
 .artsy:hover svg circle {
   stroke: #ec2d6e;
   animation-name: clr-change;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 @keyframes clr-change {
@@ -1917,5 +1929,151 @@ nav .reveal span:last-child {
   }
   100% {
     stroke: #000000;
+  }
+}
+
+/**** EXPAND STYLES ****/
+.banner {
+  width: 100%;
+  height: 450px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: 0;
+}
+.banner a {
+  text-decoration: underline;
+}
+.more .overlay {
+  background-color: #121c25;
+}
+.more .heading {
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+.more h3 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+.more .divider {
+  height: 40px;
+}
+.more p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.more p,
+.more ul {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.more ul li {
+  margin-left: 40px;
+}
+.more img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #d6e4ed;
+}
+.more section .container {
+  padding-bottom: 240px;
+}
+.more-img {
+  margin-top: 20px;
+}
+.more-img img {
+  margin-bottom: 10px;
+}
+#footer p,
+#footer a {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#footer .divider {
+  height: 7px;
+}
+.more #footer {
+  width: 100%;
+}
+.more #footer.scroll {
+  position: fixed;
+  bottom: 0;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 220px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #d6e4ed;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 200ms background-color;
+}
+#myBtn img {
+  border: 0px;
+  width: unset;
+}
+#myBtn:hover {
+  background-color: #242e37; /* Add a dark-grey background on hover */
+}
+.description a {
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: 300ms opacity;
+}
+.description a:hover {
+  opacity: 0.5;
+}
+#portfolio {
+  margin-left: -30px;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+#portfolio .container {
+  margin-left: 30px;
+}
+#pbtn {
+  margin-left: 30px;
+}
+@media screen and (min-width: 1700px) {
+  #portfolio .container,
+  #pbtn {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #portfolio {
+    margin-left: 0;
+    border-radius: 0;
+    margin-right: 0;
+  }
+  #portfolio .container {
+    margin-left: 0;
+  }
+  #pbtn {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .more section .container {
+    padding-bottom: 150px;
+  }
+  #myBtn {
+    bottom: 150px;
   }
 }
