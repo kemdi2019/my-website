@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemdi . Booktopia</title>
+    <link rel="icon" type="image/png" href="../img/favicon-white.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+
+    <style>
+        .banner {
+            background-color: #242e37;
+            background-image: url('../img/banner-booktopia.png');
+        }
+    </style>
+</head>
+
+<body class="more">
+    <div class="banner posrel">
+        <div class="overlay"></div>
+        <div class="heading posrel">
+            <a href="../index.html">Home</a>
+            <h1>BOOKTOPIA</h1>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <h3>BRIEF</h3>
+            <p>
+                Booktopia is an app that helps people easily find and save books. In addition to the app, there is also
+                a website.<br>
+                **Note: This is a mockup idea or personal project
+            </p>
+
+            <div class="divider"></div>
+
+            <h3>PROCESS</h3>
+            <p>
+                Inspired by justwatch.com where you can find where to stream or buy tv shows and movies.
+
+            </p>
+            <p>
+                By browsing competitors I was able to see what worked and what didn’t. I took notes of the positives and
+                what would make for a better user experience. I was able to build out a user journey based on my notes.
+                Then I began working on wireframes
+            </p>
+            <img src="../img/booktopia-userjourney.png" alt="user journey for booktopia">
+            <img src="../img/booktopia-wireframe.png" alt="wireframes for booktopia">
+            <p>
+                After deciding on what part of the layout worked best, I made a high fidelity mockup and chose the
+                colour palette
+            </p>
+            <img src="../img/booktopia-palette.png" alt="colour palette for booktopia">
+            <p>
+                <i>Initial sketches were done in Procreate<br>
+                    Final designs were completed in Figma</i>
+            </p>
+
+            <div class="divider"></div>
+
+            <h3>END RESULT</h3>
+            <div class="more-img">
+                <img src="../img/booktopia-web.png" alt="booktopia web page design">
+                <img src="../img/booktopia-app.png" alt="booktopia app design">
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="section blue1">
+        <div class="container">
+            <p>© 2022 kemdi ikejiani. all rights reserved.</p>
+            <div class="divider"></div>
+            <p>
+                <a href="https://github.com/kemdi-dev" target="_blank">github</a> |
+                <a href="https://www.instagram.com/createdbykemdi/" target="_blank">instagram</a> |
+                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">linkedin</a> |
+                <a href="Resume-Kemdi.pdf">resume</a>
+            </p>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="../img/totop.svg" alt="go to top of the page">
+    </button>
+
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+        let footersec = document.getElementById("footer");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 380 || document.documentElement.scrollTop > 380) {
+                mybutton.style.display = "block";
+                footersec.classList.add("scroll");
+            } else {
+                mybutton.style.display = "none";
+                footersec.classList.remove("scroll");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>
