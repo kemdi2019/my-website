@@ -12,495 +12,330 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <!--#000000 #04182F #C5D2E0 #ffffff-->
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body tabindex="0">
+<body tabindex="0" class="nojs">
+
+    <div class="navbar flex">
+        <div class="icons">
+            <a href="https://www.instagram.com/createdbykemdi/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5"
+                    title="instagram">
+                    <g id="Icon_feather-instagram" data-name="Icon feather-instagram"
+                        transform="translate(-2.25 -2.25)">
+                        <path id="Path_4" data-name="Path 4"
+                            d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z"
+                            fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1" />
+                        <path id="Path_5" data-name="Path 5" d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z"
+                            fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1" />
+                        <path id="Path_6" data-name="Path 6" d="M26.25,9.75h0" fill="none" stroke="#edf1ef"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                    </g>
+                </svg>
+            </a>
+            <a href="https://github.com/kemdi-dev" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.481" height="31.536" viewBox="0 0 29.481 31.536"
+                    title="github">
+                    <path id="Icon_feather-github" data-name="Icon feather-github"
+                        d="M12.987,27.18C5.854,29.32,5.854,23.613,3,22.9M22.975,31.46V25.938a4.808,4.808,0,0,0-1.341-3.724c4.48-.5,9.188-2.2,9.188-9.987a7.761,7.761,0,0,0-2.139-5.349,7.234,7.234,0,0,0-.129-5.38S26.87,1,22.975,3.61a19.09,19.09,0,0,0-9.987,0C9.092,1,7.409,1.5,7.409,1.5A7.234,7.234,0,0,0,7.28,6.877,7.762,7.762,0,0,0,5.14,12.27c0,7.733,4.708,9.431,9.188,9.987a4.808,4.808,0,0,0-1.341,3.681V31.46"
+                        transform="translate(-2.09 -0.673)" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="1" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33.079" height="31.5" viewBox="0 0 33.079 31.5"
+                    title="linkedin">
+                    <g id="Icon_feather-linkedin" data-name="Icon feather-linkedin" transform="translate(-2.25 -2.25)">
+                        <path id="Path_1" data-name="Path 1"
+                            d="M24.474,12a9.474,9.474,0,0,1,9.474,9.474V32.526H27.632V21.474a3.158,3.158,0,0,0-6.316,0V32.526H15V21.474A9.474,9.474,0,0,1,24.474,12Z"
+                            transform="translate(0.632 0.474)" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                        <path id="Path_2" data-name="Path 2" d="M3,13.5H9.316V32.447H3Z" transform="translate(0 0.553)"
+                            fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1" />
+                        <path id="Path_3" data-name="Path 3"
+                            d="M9.316,6.158A3.158,3.158,0,1,1,6.158,3,3.158,3.158,0,0,1,9.316,6.158Z"
+                            transform="translate(0 0)" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="1" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+
+        <nav>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="menu posabs">
+                <div class="artsy">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80.776" height="197.011"
+                        viewBox="0 0 80.776 197.011">
+                        <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
+                            d="M7793.066,210.482c15.6,14.946,30.111,38.558,30.111,74.386,0,78.227-69.177,108.956-69.177,108.956"
+                            transform="translate(-7747.401 -203.413)" fill="none" stroke="#fff" stroke-linecap="round"
+                            stroke-width="8" />
+                    </svg>
+                </div>
+                <ul id="menu-list">
+                    <li class="active"><a href="#home" onclick="isNavClicked();">Home</a></li>
+                    <li><a href="#portfolio" onclick="isNavClicked();">Portfolio</a></li>
+                    <li><a href="#about" onclick="isNavClicked();">About</a></li>
+                    <li>
+                        <div class="reveal"><span>Contact</span><span>kemdi.ik[at]gmail[dot]com</span></div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
     <section id="home" class="section">
 
-        <div class="posabs artsy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="483.613" viewBox="0 0 483.613 786.982">
-                <g id="hero-right" transform="translate(-1437.078 -225.727)">
-                    <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
-                        d="M13895,1714.938s-173.235,2.819-173.235,143.933a140.118,140.118,0,0,0,1.636,21.666"
-                        transform="translate(-11975 -1461.266)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" stroke-dasharray="1 12" />
-                    <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
-                        d="M13723.4,1880.537c15.784,101.155,142.071,118.49,171.6,164.493"
-                        transform="translate(-11975 -1461.266)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" />
-                    <path id="Path_3" data-name="Path 3" vector-effect="non-scaling-stroke"
-                        d="M13895,1688.5c-77.731-10.41-367.341,69.9-367.341,209.526,0,100.422,203.7,90.134,301.178,159.909,27.978,20.026,49.4,39.736,65.832,57.781"
-                        transform="translate(-11975 -1461.266)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" />
-                    <path id="Path_4" data-name="Path 4" vector-effect="non-scaling-stroke"
-                        d="M13781.979,2032.743s-85.283,139.632-38.153,258.043,150.9,141.539,150.9,141.539"
-                        transform="translate(-11975 -1461.266)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" stroke-dasharray="1 12" />
-                    <path id="Path_5" data-name="Path 5" vector-effect="non-scaling-stroke"
-                        d="M13730.421,2232.254a202.493,202.493,0,0,0,13.405,58.532c16.824,42.271,40.867,72.4,65.162,93.949"
-                        transform="translate(-12050.696 -1426.799)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" />
-                    <path id="Path_6" data-name="Path 6" vector-effect="non-scaling-stroke"
-                        d="M17403,366s-177.051,7.087-314.852,126.1" transform="translate(-15483 12.734)" fill="none"
-                        stroke="#000" stroke-linecap="round" stroke-width="1" />
-                    <path id="Path_7" data-name="Path 7" vector-effect="non-scaling-stroke"
-                        d="M17043.1,537.071a435.553,435.553,0,0,0-70.047,111.759c-59.559,136.788-58.844,261.157-43.617,350.567"
-                        transform="translate(-15483 12.734)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" />
+        <div class="artsy">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 845.937 842.574">
+                <g id="path-home" transform="translate(-1298.985 -378.458)">
+                    <circle id="center" vector-effect="non-scaling-stroke" cx="8" cy="8" r="8"
+                        transform="translate(1781 718)" fill="#b1475a" />
+                    <path id="ellipse_1" vector-effect="non-scaling-stroke" data-name="ellipse 1"
+                        d="M10013.672,548.392c-83,83.005-112.376,235.146-.462,357.307s286.376,80.535,362.944,3.967"
+                        transform="translate(-8404)" fill="none" stroke="#fff" stroke-linecap="round"
+                        stroke-width="8" />
+                    <path id="ellipse_2" vector-effect="non-scaling-stroke" data-name="ellipse 2"
+                        d="M10081.492,548.392c-159.336,159.336-215.717,451.385-.887,685.885s549.725,154.6,696.705,7.615"
+                        transform="translate(-8635.924 -166.398)" fill="none" stroke="#fff" stroke-linecap="round"
+                        stroke-width="8" />
                 </g>
             </svg>
         </div>
 
-        <nav class="menu">
-            <ul>
-                <li><a href="#home" onclick="isNavClicked();">home</a></li>
-                <li><a href="#portfolio" onclick="isNavClicked();">portfolio</a></li>
-                <li><a href="#about" onclick="isNavClicked();">about</a></li>
-                <li><a class="reveal"> <span>contact</span>
-                        <span>kemdi.ik[at]gmail.com</span> </a></li>
-                <li>
-                    <div class="posabs artsy">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="195.209" viewBox="0 0 195.209 268.194">
-                            <g id="menu-svg" transform="translate(-1413.652 -793.717)">
-                                <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
-                                    d="M23220,2382.734a161.371,161.371,0,0,0,8.865-53.426c0-53.091-21.437-82.7-69.291-119.537s16.15-93.888,16.15-93.888"
-                                    transform="translate(-21620.504 -1321.46)" fill="none" stroke="#000"
-                                    stroke-linecap="round" stroke-width="1" stroke-dasharray="1 12" />
-                                <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
-                                    d="M22969.939,2201.759a81.746,81.746,0,0,1,44.553-14.889c41.318-1.026,85.365,31.384,85.365,79.885,0,19.3-5.689,36.672-15.809,50.8"
-                                    transform="translate(-21556 -1257)" fill="none" stroke="#000" stroke-width="1" />
-                            </g>
-                        </svg>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <div class="icons container">
-            <div class="left">
-                <a href="https://www.instagram.com/createdbykemdi/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5"
-                        title="instagram">
-                        <g id="Icon_feather-instagram" data-name="Icon feather-instagram"
-                            transform="translate(-2.25 -2.25)">
-                            <path id="Path_4" data-name="Path 4"
-                                d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z"
-                                fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1" />
-                            <path id="Path_5" data-name="Path 5" d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z"
-                                fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="1" />
-                            <path id="Path_6" data-name="Path 6" d="M26.25,9.75h0" fill="none" stroke="#edf1ef"
-                                stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                        </g>
-                    </svg>
-                </a>
-                <a href="https://github.com/kemdi-dev" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29.481" height="31.536" viewBox="0 0 29.481 31.536"
-                        title="github">
-                        <path id="Icon_feather-github" data-name="Icon feather-github"
-                            d="M12.987,27.18C5.854,29.32,5.854,23.613,3,22.9M22.975,31.46V25.938a4.808,4.808,0,0,0-1.341-3.724c4.48-.5,9.188-2.2,9.188-9.987a7.761,7.761,0,0,0-2.139-5.349,7.234,7.234,0,0,0-.129-5.38S26.87,1,22.975,3.61a19.09,19.09,0,0,0-9.987,0C9.092,1,7.409,1.5,7.409,1.5A7.234,7.234,0,0,0,7.28,6.877,7.762,7.762,0,0,0,5.14,12.27c0,7.733,4.708,9.431,9.188,9.987a4.808,4.808,0,0,0-1.341,3.681V31.46"
-                            transform="translate(-2.09 -0.673)" fill="none" stroke="#edf1ef" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="1" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="33.079" height="31.5" viewBox="0 0 33.079 31.5"
-                        title="linkedin">
-                        <g id="Icon_feather-linkedin" data-name="Icon feather-linkedin"
-                            transform="translate(-2.25 -2.25)">
-                            <path id="Path_1" data-name="Path 1"
-                                d="M24.474,12a9.474,9.474,0,0,1,9.474,9.474V32.526H27.632V21.474a3.158,3.158,0,0,0-6.316,0V32.526H15V21.474A9.474,9.474,0,0,1,24.474,12Z"
-                                transform="translate(0.632 0.474)" fill="none" stroke="#edf1ef" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="1" />
-                            <path id="Path_2" data-name="Path 2" d="M3,13.5H9.316V32.447H3Z"
-                                transform="translate(0 0.553)" fill="none" stroke="#edf1ef" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="1" />
-                            <path id="Path_3" data-name="Path 3"
-                                d="M9.316,6.158A3.158,3.158,0,1,1,6.158,3,3.158,3.158,0,0,1,9.316,6.158Z"
-                                transform="translate(0 0)" fill="none" stroke="#edf1ef" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="1" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="burger-con nojs">
-                <div class="posrel">
-                    <div class="burger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
-                    <span>MENU</span>
-                </div>
-                <div class="menu two">
-                    <ul>
-                        <li><a href="#home" onclick="isNavClicked();">home</a></li>
-                        <li><a href="#portfolio" onclick="isNavClicked();">portfolio</a></li>
-                        <li><a href="#about" onclick="isNavClicked();">about</a></li>
-                        <li><a class="reveal"> <span>contact</span>
-                                <span>kemdi.ik[at]gmail.com</span> </a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="divider posabs"></div>
-        </div>
-
         <div class="hero container">
-
+            <div class="headline">
+                <span>UI/UX DESIGNER</span> DEVELOPER
+            </div>
             <div id="title">
                 <h1>
                     kemdi<br>
                     ikejiani
                 </h1>
                 <div class="arrow">
-                    <a href="#portfolio">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14.244" height="99.102"
-                            viewBox="0 0 14.244 99.102">
-                            <g id="arrow" transform="translate(-6779.161 -2278)">
-                                <path id="line" d="M236,674.184v77.966" transform="translate(6550.296 1603.816)"
-                                    fill="none" stroke="#000" stroke-width="1" />
-                                <path id="chevron" d="M0,0V12.593L12.056,6.076Z"
-                                    transform="translate(6792.593 2363.966) rotate(90)" fill="none" stroke="#000"
-                                    stroke-width="1" />
-                            </g>
-                        </svg>
-                    </a>
+                    <div class="posabs">
+                        <a href="#portfolio">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14.244" height="99.102"
+                                viewBox="0 0 14.244 99.102">
+                                <g transform="translate(-6779.161 -2278)">
+                                    <path id="line" d="M236,674.184v77.966" transform="translate(6550.296 1603.816)"
+                                        fill="none" stroke="#fff" stroke-width="1" />
+                                    <path id="chevron" d="M0,0V12.593L12.056,6.076Z"
+                                        transform="translate(6792.593 2363.966) rotate(90)" fill="none" stroke="#fff"
+                                        stroke-width="1" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="center">
-                <h3>
-                    UI/UX DESIGNER<br>
-                    DEVELOPER
-                </h3>
-            </div>
-        </div>
-
-        <div class="artsy mobile posabs one">
-            <svg xmlns="http://www.w3.org/2000/svg" width="68.125" viewBox="0 0 68.125 64.217">
-                <path id="hero-l1" vector-effect="non-scaling-stroke"
-                    d="M12753.964,2022.009c.178-6.234-.828-15.2-7.222-19.8s-10.062,9.6-20.187,5.155-2.616-31.72-18.91-31.88-20.635,22.427-20.779,34.288,6.526,28.06,32.53,28.883S12753.786,2028.243,12753.964,2022.009Z"
-                    transform="translate(-12686.363 -1974.988)" fill="none" stroke="#000" stroke-linecap="round"
-                    stroke-width="1" />
-            </svg>
-        </div>
-        <div class="artsy mobile posabs two">
-            <svg xmlns="http://www.w3.org/2000/svg" width="102.266" viewBox="0 0 102.266 39.807">
-                <g id="hero-l2" transform="translate(-18290.238 -3641.652)">
-                    <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
-                        d="M12776.921,2094.277s46.075-26.6,101.028-20.071" transform="translate(5514 1569)" fill="none"
-                        stroke="#000" stroke-linecap="round" stroke-width="1" stroke-dasharray="1 15" />
-                    <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
-                        d="M12789.585,2111.873s27.95-3.5,46.034,0" transform="translate(5514 1569)" fill="none"
-                        stroke="#000" stroke-linecap="round" stroke-width="1" />
-                </g>
-            </svg>
-        </div>
-        <div class="artsy mobile posabs three">
-            <svg xmlns="http://www.w3.org/2000/svg" width="93" viewBox="0 0 93 93">
-                <circle id="hero-l3" vector-effect="non-scaling-stroke" cx="46" cy="46" r="46"
-                    transform="translate(0.5 0.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1" />
-            </svg>
         </div>
     </section>
 
-    <section id="portfolio" class="blue2 section n-active">
+    <section id="portfolio" class="section">
 
-        <div class="posabs artsy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="998.934" viewBox="0 0 998.934 153.015">
-                <g id="topv1" transform="translate(-920.751 -1006.485)">
-                    <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
-                        d="M12304.251,997.021c0,48.042,57.244,121.387,217.164,122.481s664.108-112.991,780.624-68.534"
-                        transform="translate(-11383 12.734)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" stroke-dasharray="1 12" />
-                    <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
-                        d="M12416.451,1063.9s47.7-12.074,79.6-48.657" transform="translate(-11383 24.734)" fill="none"
-                        stroke="#000" stroke-linecap="round" stroke-width="1" />
-                    <path id="Path_3" data-name="Path 3" vector-effect="non-scaling-stroke"
-                        d="M12515.212,1053.6s26.728-28.748,21.614-56.316" transform="translate(-11387.477 30.734)"
-                        fill="none" stroke="#000" stroke-linecap="round" stroke-width="1" />
-                    <path id="Path_4" data-name="Path 4" vector-effect="non-scaling-stroke"
-                        d="M20848.926,1097.038c15.7,28.037,45.838,49.228,84.574,49.228,58.162,0,97.063-45.429,97.063-95.4a101.937,101.937,0,0,0-17.555-56.84"
-                        transform="translate(-19495 12.734)" fill="none" stroke="#000" stroke-width="1" />
-                </g>
-            </svg>
+        <div class="bkg">
+            <div class="posrel">
+                <div id="expbtn" class="btn posabs">
+                    <img class="default" src="img/chevron-r.svg" alt="show more">
+                    <img class="cancel" src="img/cancel.svg" alt="show less">
+                </div>
+            </div>
         </div>
 
-        <div class="posabs artsy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="551.85" viewBox="0 0 551.85 68.854">
-                <g id="bottom" transform="translate(-610.656 -2225.509)">
-                    <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
-                        d="M20106,2294s57.887-55.056,150.076-54.945,150.188,36.732,216.441,36.139,158.719-66.815,167.9,18.806"
-                        transform="translate(-19495)" fill="none" stroke="#000" stroke-width="1" />
-                    <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
-                        d="M20566.785,2232.4s46.357-14.31,66.615,0,23.529,33.39,23.529,33.39"
-                        transform="translate(-19495)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="1"
-                        stroke-dasharray="1 12" />
-                </g>
-            </svg>
-        </div>
         <div class="container">
 
-            <div class="heading">
-                <h2>highlights</h2>
-            </div>
+            <div class="page">
+                <div class="gallery-wrapper">
+                    <h2>These are my highlights!</h2>
 
-            <div class="gallery">
-                <div class="page flex active">
-                    <div class="col">
+                    <div class="gallery">
                         <div class="image">
-                            <div class="error">error! javascript may be disabled</div>
-                            <div class="overlay">
-                                <p class="description">web design</p>
-                            </div>
+                            <div class="overlay">View Design</div>
                         </div>
                         <div class="image">
-                            <div class="error">error! javascript may be disabled</div>
-                            <div class="overlay">
-                                <p class="description">web design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="image">
-                            <div class="error">error! javascript may be disabled</div>
-                            <div class="overlay">
-                                <p class="description">web development</p>
-                            </div>
+                            <div class="overlay">View Design</div>
                         </div>
                         <div class="image">
-                            <div class="error">error! javascript may be disabled</div>
-                            <div class="overlay">
-                                <p class="description">web design and development</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="image">
-                            <div class="error">error! javascript may be disabled</div>
-                            <div class="overlay">
-                                <p class="description">app design mockup</p>
-                            </div>
+                            <div class="overlay">View Design</div>
                         </div>
                         <div class="image">
-                            <div class="overlay">
-                                <p class="description">web design and development</p>
-                            </div>
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
+                        </div>
+                        <div class="image">
+                            <div class="overlay">View Design</div>
                         </div>
                     </div>
                 </div>
 
+                <div id="popup" class="popup">
 
-                <div class="page flex">
-                    <div class="col">
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">poster design</p>
+                    <div class="popup-wrapper posrel">
+                        <div class="close-div one">
+                            <div class="btn close">
+                                <img src="img/cancel.svg" alt="close">
                             </div>
                         </div>
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">app design mockup</p>
-                            </div>
+                        <div class="img-description"></div>
+                        <div class="popup-img">
+                            <img id="forcarousel">
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">web development</p>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">web design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">web design and development</p>
-                            </div>
-                        </div>
-                        <div class="image">
-                            <div class="overlay">
-                                <p class="description">web development</p>
+                        <div class="close-div two">
+                            <div class="btn close">
+                                <img src="img/cancel.svg" alt="close">
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-
-            <div id="popup" class="popup">
-
-                <div class="close-div">
-                    <div class="button close">
-                        <p>
-                            <img src="img/btn-larrow.svg" alt="close">
-                            <span>back</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="popup-wrapper">
-
-                    <div class="popup-img">
-                        <img id="forcarousel">
-                    </div>
-                    <div class="img-description-wrapper">
-                        <div class="posrel">
-                            <div class="collapse posabs" id="collapse">
-                                <img src="img/arrow-collapse.svg" alt="collapse the description">
-                            </div>
-                            <div class="img-description"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="pbtn" class="button container">
-            <div id="parrow-wrapper">
-                <p class="prev" onclick="plusSlides(-1)"><img src="img/btn-larrow.svg" alt="previous portfolio page">
-                </p>
-                <p class="next" onclick="plusSlides(1)"><span class="teaser">but wait! there's more</span> <img
-                        src="img/btn-arrow.svg" alt="next portfolio page"></p>
-            </div>
-            <a href="https://www.instagram.com/createdbykemdi/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 0 31.5 31.5" title="instagram">
-                    <g id="Icon_feather-instagram" data-name="Icon feather-instagram"
-                        transform="translate(-2.25 -2.25)">
-                        <path id="Path_4" vector-effect="non-scaling-stroke" data-name="Path 4"
-                            d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z"
-                            fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1" />
-                        <path id="Path_5" vector-effect="non-scaling-stroke" data-name="Path 5"
-                            d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z" fill="none" stroke="#000000"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
-                        <path id="Path_6" vector-effect="non-scaling-stroke" data-name="Path 6" d="M26.25,9.75h0"
-                            fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="1" />
-                    </g>
-                </svg>
-            </a>
-            <a href="https://github.com/kemdi-dev" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 0 29.481 31.536" title="github">
-                    <path id="Icon_feather-github" vector-effect="non-scaling-stroke" data-name="Icon feather-github"
-                        d="M12.987,27.18C5.854,29.32,5.854,23.613,3,22.9M22.975,31.46V25.938a4.808,4.808,0,0,0-1.341-3.724c4.48-.5,9.188-2.2,9.188-9.987a7.761,7.761,0,0,0-2.139-5.349,7.234,7.234,0,0,0-.129-5.38S26.87,1,22.975,3.61a19.09,19.09,0,0,0-9.987,0C9.092,1,7.409,1.5,7.409,1.5A7.234,7.234,0,0,0,7.28,6.877,7.762,7.762,0,0,0,5.14,12.27c0,7.733,4.708,9.431,9.188,9.987a4.808,4.808,0,0,0-1.341,3.681V31.46"
-                        transform="translate(-2.09 -0.673)" fill="none" stroke="#000000" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="1" />
-                </svg>
-            </a>
         </div>
 
     </section>
 
     <section id="about" class="section">
-        <div class="posabs artsy">
-            <svg xmlns="http://www.w3.org/2000/svg" width="411.392" viewBox="0 0 411.392 205.045">
-                <g id="topv2" transform="translate(-802 -2218.894)">
-                    <g id="Ellipse_1" data-name="Ellipse 1" vector-effect="non-scaling-stroke"
-                        transform="translate(802 2256)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1">
-                        <circle vector-effect="non-scaling-stroke" cx="65" cy="65" r="65" stroke="none" />
-                        <circle vector-effect="non-scaling-stroke" cx="65" cy="65" r="64.5" fill="none" />
-                    </g>
-                    <path id="Path_2" vector-effect="non-scaling-stroke" data-name="Path 2"
-                        vector-effect="non-scaling-stroke"
-                        d="M13007.552,2035.328c.852,22.345.709,55.714-34.514,70.961s-48.09-34.425-96.475-18.479-25.256,91.142-103.133,91.715-85.867-57.829-86.555-100.347,31.191-100.586,155.473-103.537S13006.706,2012.983,13007.552,2035.328Z"
-                        transform="translate(-11794.802 243.909)" fill="none" stroke="#000" stroke-linecap="round"
-                        stroke-width="1" stroke-dasharray="1 12" />
-                </g>
-            </svg>
+        <div class="bkg">
+            <div class="posrel">
+                <div class="icons" id="abouticons">
+                    <a href="https://www.instagram.com/createdbykemdi/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="31.5" viewBox="0 0 31.5 31.5"
+                            title="instagram">
+                            <g id="Icon_feather-instagram" data-name="Icon feather-instagram"
+                                transform="translate(-2.25 -2.25)">
+                                <path id="Path_4" data-name="Path 4" vector-effect="non-scaling-stroke"
+                                    d="M10.5,3h15A7.5,7.5,0,0,1,33,10.5v15A7.5,7.5,0,0,1,25.5,33h-15A7.5,7.5,0,0,1,3,25.5v-15A7.5,7.5,0,0,1,10.5,3Z"
+                                    fill="none" stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" />
+                                <path id="Path_5" data-name="Path 5" vector-effect="non-scaling-stroke"
+                                    d="M24,17.055A6,6,0,1,1,18.945,12,6,6,0,0,1,24,17.055Z" fill="none" stroke="#edf1ef"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                <path id="Path_6" data-name="Path 6" vector-effect="non-scaling-stroke"
+                                    d="M26.25,9.75h0" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="1" />
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kemdi-dev" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29.481" height="31.536"
+                            viewBox="0 0 29.481 31.536" title="github">
+                            <path id="Icon_feather-github" data-name="Icon feather-github"
+                                vector-effect="non-scaling-stroke"
+                                d="M12.987,27.18C5.854,29.32,5.854,23.613,3,22.9M22.975,31.46V25.938a4.808,4.808,0,0,0-1.341-3.724c4.48-.5,9.188-2.2,9.188-9.987a7.761,7.761,0,0,0-2.139-5.349,7.234,7.234,0,0,0-.129-5.38S26.87,1,22.975,3.61a19.09,19.09,0,0,0-9.987,0C9.092,1,7.409,1.5,7.409,1.5A7.234,7.234,0,0,0,7.28,6.877,7.762,7.762,0,0,0,5.14,12.27c0,7.733,4.708,9.431,9.188,9.987a4.808,4.808,0,0,0-1.341,3.681V31.46"
+                                transform="translate(-2.09 -0.673)" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="1" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33.079" height="31.5" viewBox="0 0 33.079 31.5"
+                            title="linkedin">
+                            <g id="Icon_feather-linkedin" data-name="Icon feather-linkedin"
+                                transform="translate(-2.25 -2.25)">
+                                <path id="Path_1" data-name="Path 1" vector-effect="non-scaling-stroke"
+                                    d="M24.474,12a9.474,9.474,0,0,1,9.474,9.474V32.526H27.632V21.474a3.158,3.158,0,0,0-6.316,0V32.526H15V21.474A9.474,9.474,0,0,1,24.474,12Z"
+                                    transform="translate(0.632 0.474)" fill="none" stroke="#edf1ef"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                <path id="Path_2" data-name="Path 2" vector-effect="non-scaling-stroke"
+                                    d="M3,13.5H9.316V32.447H3Z" transform="translate(0 0.553)" fill="none"
+                                    stroke="#edf1ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+                                <path id="Path_3" data-name="Path 3" vector-effect="non-scaling-stroke"
+                                    d="M9.316,6.158A3.158,3.158,0,1,1,6.158,3,3.158,3.158,0,0,1,9.316,6.158Z"
+                                    transform="translate(0 0)" fill="none" stroke="#edf1ef" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="1" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <div class="heading">
-                <h2>a little bit about me</h2>
-            </div>
-            <div id="height100" class="text">
+            <div class="text">
                 <p>
                     Hi there! Thanks for stopping by. I’m a multidisciplinary artist based in toronto with a
                     focus on web products and human-computer interaction. I channel my passion for interactive
                     design in my day-to-day work and in my personal projects. I’m currently working on a video
                     game using the Unity engine.
                 </p>
-                <div class="divider"></div>
-                <p>
+                <p id="inview">
                     To view some of my other projects, check out my <a target="_blank"
-                        href="https://github.com/kemdi-dev">GitHub</a>.
-                    If you’re interested in working with me, feel free to <a class="reveal"> <span>contact
-                            me</span><span> at kemdi.ik[at]gmail[dot]com </span></a>
+                        href="https://github.com/kemdi-dev">Github</a>.
+                    If you’re interested in working with me, feel free to contact me at kemdi.ik[at]gmail[dot]com
                 </p>
-
-                <div class="design-proc">
-                    <h4>My design process [cliffnotes version]</h4>
-                    <ul>
-                        <li>research</li>
-                        <li>wireframes</li>
-                        <li>2 low-fidelity designs</li>
-                        <li>feedback</li>
-                        <li>detailed mockup</li>
-                        <li>modifications</li>
-                        <li>final design</li>
-                    </ul>
-                </div>
+                <p class="links">
+                    <a href="/more/booktopia.html">design process example</a><br>
+                    <a href="https://github.com/kemdi-dev/home" target="_blank">view the code for this website on my
+                        GitHub</a>
+                </p>
             </div>
-            <div class="button expand">
-                <a><img src="img/btn-darrow.svg" alt="arrow"></a>
-            </div>
-
-            <div class="button secondary">
-                <a target="_blank" href="#">view resume <img src="img/btn-arrow-dk.svg" alt="arrow"></a>
+            <div class="sketch">
+                <img src="img/design-process.png" alt="simple sketch of my design process">
             </div>
         </div>
     </section>
 
-    <section id="footer" class="section blue1">
+    <footer id="footer">
         <div class="container">
-            <p>© 2022 kemdi ikejiani. all rights reserved.</p>
-            <div class="divider"></div>
+            <p>© 2023 kemdi ikejiani. all rights reserved.</p>
             <p>
                 <a href="https://github.com/kemdi-dev" target="_blank">github</a> |
                 <a href="https://www.instagram.com/createdbykemdi/" target="_blank">instagram</a> |
                 <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">linkedin</a>
             </p>
         </div>
-    </section>
+    </footer>
 
 
     <script>
         var images = document.querySelectorAll('.image');
-        var gifs = document.querySelectorAll('.gif');
-        var error = document.querySelectorAll('.error');
         var modal = document.getElementById('popup');
         var modalImg = document.getElementById("forcarousel");
         var menunojs = document.querySelector(".burger-con");
         var collapse = document.querySelector('.collapse img');
         var imgdescription = document.querySelector('.img-description-wrapper');
-        menunojs.classList.remove("nojs");
 
         const employersContainer = document.querySelector('.img-description');
 
-        const arrOfObj = [{ name: 'Web Design (CI Private Wealth)', paragraph: 'I was tasked with creating a new experience for the visitors of this site. The main keywords were formal, clean, and familiar. I looked at similar experiences on other CI sites and drew inspiration from them. I included the navigation, so the user could easily view articles/webinars/podcasts/videos without feeling like they were leaving the page which created a much better user experience. I also made sure that any font on the page passed a contrast test for accessibility reasons.' },
-        { name: 'Web Design (Elle Hacks)', paragraph: 'Keywords were fun, inviting, and modern. I played around with abstract shapes and the colour of the year (yellow). This was a one page site which meant I had to include everything on this page without overwhelming visitors with too much information. I started by breaking it out in different sections based on importance and/or priority. From there, I worked my way up to what you see here. Even if this site consists of several sections, it feels smooth to navigate which makes for a good user experience.The woman of the year was Alice Ball, so I illustrated her portrait and added it to the hero portion of the site.' },
+        const arrOfObj = [{ name: 'Web Design (CI Private Wealth)', paragraph: '<a href="/more/cipw.html">CLICK TO VIEW DESIGN PROCESS</a><br> I was tasked with creating a new experience for the visitors of this site. The main keywords were formal, clean, and familiar. I looked at similar experiences on other CI sites and drew inspiration from them. I included the navigation, so the user could easily view articles, webinars, podcasts and videos without feeling like they were leaving the page which created a much better user experience. I also made sure that any font on the page passed a contrast test for accessibility reasons.' },
+        { name: 'App design mockup (BOOKTOPIA)', paragraph: '<a href="/more/booktopia.html">CLICK TO VIEW DESIGN PROCESS</a><br> Booktopia is an app that helps people easily find and save books. Inspired by justwatch.com where you can find where to stream or buy tv shows and movies. The colour theme was monochromatic, welcoming and vibrant.' },
+        { name: 'Web design and development (BLUJAY)', paragraph: '<a href="/more/blujay.html">CLICK TO VIEW DESIGN PROCESS</a><br> This landing page template was designed in Sketch and built for Adobe Marketo using HTML, CSS, and JavaScript.' },
+        { name: 'Web Design (Elle Hacks)', paragraph: '<a href="/more/ellehacks.html">CLICK VIEW DESIGN PROCESS</a><br> Keywords were fun, inviting, and modern. I played around with abstract shapes and the colour of the year (yellow). This was a one page site which meant I had to include everything on this page without overwhelming visitors with too much information. I started by breaking it out in different sections based on importance and/or priority. From there, I worked my way up to what you see here. Even if this site consists of several sections, it feels smooth to navigate which makes for a good user experience.The woman of the year was Alice Ball, so I illustrated her portrait and added it to the hero portion of the site.' },
         { name: 'Web Development (CIRRUS)', paragraph: 'This landing page template was built in Adobe Marketo using HTML, CSS, vanilla JavaScript, Bootstrap and jQuery. ' },
         { name: 'Web design and development (CPA)', paragraph: 'This CPA branded page had to be differentiated from the normal CI Direct Investing site with no top navigation bar and a simplified footer. I made use of the brand guidelines. This ensured that even if the page template was different, the client still knew it was a CIDI site. I included the CIDI logo and the CPA logo which meant that as soon as anyone landed on the page, they could conclude that this page was in partnership with CPA. Development was handled in Adobe Experience Manager (AEM).' },
-        { name: 'App design mockup (BOOKTOPIA)', paragraph: 'Booktopia is an app that helps people easily find and save books. Inspired by justwatch.com where you can find where to stream or buy tv shows and movies. The colour theme was monochromatic, welcoming and vibrant.' },
-        { name: 'Web design and development (BLUJAY)', paragraph: 'This landing page template was designed in Sketch and built for Adobe Marketo using HTML, CSS, and JavaScript.' },
         { name: 'Poster design (Elle Hacks)', paragraph: 'I was literally working on my computer when the design idea came to me. Elle Hacks is a yearly-run hackathon which means laptops will be used—and I wanted to convey this with the poster. I was able to incorporate the theme of the year (yellow), the idea of the event (coding), and the fun, abstract theme that was asked for. Initial sketch was done in Procreate. Final artwork was done on Adobe Illustrator.' },
         { name: 'App design mockup (NAME THIS)', paragraph: 'Name This is a fictional app that helps people identify items. Inspired by Google Glass. I wanted to showcase a simple app that just worked. No need to sign up or sign in—just take or upload a picture. Simple as ABC.' },
         { name: 'Web development (BLUECORE)', paragraph: 'This landing page template was built in Adobe Marketo using HTML, CSS, vanilla JavaScript, Bootstrap and jQuery.' },
         { name: 'Web design (MAC)', paragraph: 'This page was designed in Sketch and Figma. I was tasked with designing a dedicated page for the careers aspect of Marketing Automation Canada. I was able to create a unique experience while keeping the overall theme aligned with the rest of the site and by incorporating the overall brand colour themes.' },
         { name: 'Web design and development (NOTA)', paragraph: 'This landing page template was built for Hubspot using HTML, CSS, and JavaScript.' },
         { name: 'Web development (Boulder)', paragraph: 'This landing page template was built in Adobe Marketo using pure HTML, CSS, and JavaScript. As you can see from the image, I coded it so that, regardless of the image dimensions, the image would be perfectly centered. I coded the bottom text portion so that the user could easily adjust the text width from half to full width.' }];
-
-        for (var i = 0; i < error.length; i++) {
-            error[i].style.display = "none";
-        }
 
         for (var i = 0; i < images.length; i++) {
 
@@ -519,9 +354,9 @@
                 const employersMapToDOM = () => {
                     var content = '';
                     var info = arrOfObj[itemno];
-                    content += `<div class="description">
+                    content += `<div class="description links">
                   <div>
-                    <h4>${info.name}</h4>
+                    <h3>${info.name}</h3>
                     <p>${info.paragraph}</p>
                   </div>                   
                 </div>`;
@@ -532,118 +367,118 @@
                 employersMapToDOM();
 
             }
-            collapse.onclick = function (collevt) {
-                if (collapse.classList.contains("upward")) {
-                    imgdescription.classList.remove("collapsed");
-                    collapse.classList.remove("upward");
-                } else {
-                    imgdescription.classList.add("collapsed");
-                    collapse.classList.add("upward");
-                }
-            }
 
         }
 
-        for (var i = 0; i < gifs.length; i++) {
+        var closebtns = document.getElementsByClassName("close");
 
-            gifs[i].style.backgroundImage = "url('img/gif" + i + ".gif')";
-
-            var gif = gifs[i];
-            var url2 = gif.style.backgroundImage;
-            var url2 = url2.replace(/(url\(|\)|")/g, '');
-            gif.onclick = function (evt2) {
-                modal.style.display = "block";
-                modalImg.src = this.style.backgroundImage.replace(/\(/g, "").replace(/\)/g, "").replace(/["']/g, "").replace(/url/g, "").replace(/img/g, "img/fs");
-            }
-        }
-
-        var span1 = document.getElementsByClassName("close")[0];
-        span1.onclick = function () {
-            modal.style.display = "none";
-            document.getElementById('portfolio').classList.remove("img-expand");
-            if (collapse.classList.contains("upward")) {
-                imgdescription.classList.remove("collapsed");
-                collapse.classList.remove("upward");
-            }
-        }
-
-        /*window.onclick = function (event1) {
-            if (event1.target == modal) {
+        for (var i = 0; i < closebtns.length; i++) {
+            var close = closebtns[i];
+            close.onclick = function () {
                 modal.style.display = "none";
+                document.getElementById('portfolio').classList.remove("img-expand");
             }
-        }*/
+        }
+
+
 
     </script>
 
     <script>
         var body = document.getElementsByTagName("body")[0];
-        var burger = document.querySelector('.burger-con .posrel');
-        var menu = document.querySelector('nav.menu ul');
-        var menuli = document.querySelectorAll('nav.menu ul li');
+        var burger = document.querySelector('.burger');
+        var section = document.getElementsByTagName('section');
+        var menulis = document.querySelectorAll('.menu li');
         var portfolio = document.querySelector('#portfolio');
-        var portfolio = document.querySelector('#portfolio');
-        var pbtn = document.getElementById('parrow-wrapper');
-        var pbtn1 = document.querySelector('#pbtn .next');
-        var pbtn2 = document.querySelector('#pbtn .prev');
+        var expand = document.getElementById('expbtn');
         var teaser = document.querySelector('.teaser');
-        var expand = document.querySelector('.expand');
         var about = document.getElementById('about');
 
-        burger.onclick = function (evt) {
-            if (burger.classList.contains("clicked")) {
-                burger.classList.remove("clicked");
+        burger.onclick = function () {
+            if (body.classList.contains("clicked")) {
                 body.classList.remove("clicked");
             } else {
-                burger.classList.add("clicked");
                 body.classList.add("clicked");
             }
         }
-        pbtn.onclick = function (evt2) {
-            teaser.style.display = "none";
-            pbtn2.style.display = "inline-block";
+        expand.onclick = function () {
+            if (portfolio.classList.contains("expand")) {
+                portfolio.classList.remove("expand");
+            } else {
+                portfolio.classList.add("expand");
+            }
         }
-        expand.onclick = function (evt3) {
-            about.classList.add("active");
+        for (var i = 0; i < section.length; i++) {
+            var menuli = menulis[i];
+            menuli.onclick = function () {
+                [].forEach.call(menulis, function (el) {
+                    el.classList.remove("active");
+                });
+                this.classList.add("active");
+            }
         }
 
         function isNavClicked() {
-            burger.classList.remove("clicked");
             body.classList.remove("clicked");
         }
+    </script>
+
+    <script>/*
+let pageIndex = 1;
+showPage(pageIndex);
+
+function plusSlides(n) {
+showPage(pageIndex += n);
+}
+
+function currentSlide(n) {
+showPage(pageIndex = n);
+}
+
+function showPage(n) {
+let i;
+let pages = document.getElementsByClassName("page");
+if (n > pages.length) {
+pageIndex = 1;
+}
+if (n < 1) {
+pageIndex = pages.length;
+}
+for (i = 0; i < pages.length; i++) {
+if (pages[i].classList.contains("active")) {
+pages[i].classList.remove("active");
+}
+}
+pages[pageIndex - 1].className += " active";
+}*/
     </script>
 
     <script>
         (function () {
             var prevScrollpos = window.pageYOffset;
-            var sections = document.querySelectorAll('.section');
-            var burger1 = document.querySelector('.burger-con');
-
-            sections[1].classList.remove("n-active");
+            var about = document.getElementById('inview');
+            var abouticons = document.getElementById('abouticons');
+            var icons = document.querySelector('.navbar .icons');
+            var aboutbkg = document.querySelector('#about .bkg');
+            var section = document.getElementsByTagName('section');
+            var navbar = document.querySelector('.navbar');
+            body.classList.remove("nojs");
 
             function onScroll() {
                 var currentScrollPos = window.pageYOffset;
-                var activesec = document.querySelector('.section.active');
 
                 prevScrollpos = currentScrollPos;
 
-                for (var i = 0; i < sections.length; i++) {
-
-                    if (!elementInViewport(sections[0])) {
-                        burger1.classList.add("scroll");
-                        body.classList.add("scrolled");
-                    } else {
-                        burger1.classList.remove("scroll");
-                        body.classList.remove("scrolled");
-                    }
-                    if (elementInViewport(sections[1])) {
-                        sections[1].classList.add("active");
-                    }
-                    if (elementInViewport(sections[2])) {
-                        sections[2].classList.add("active");
-                    }
-                    if (!elementInViewport(sections[2])) {
-                        sections[2].classList.remove("active");
-                    }
+                if (elementInViewport(about) || elementInViewport(abouticons)) {
+                    icons.classList.add("inview");
+                    aboutbkg.classList.add("anim");
+                } else {
+                    icons.classList.remove("inview");
+                }
+                if (!elementInViewport(section[0])) {
+                    navbar.classList.add("scroll");
+                } else {
+                    navbar.classList.remove("scroll");
                 }
             }
 
@@ -668,36 +503,6 @@
             }
             window.onscroll = onScroll;
         })();
-    </script>
-
-    <script>
-        let pageIndex = 1;
-        showPage(pageIndex);
-
-        function plusSlides(n) {
-            showPage(pageIndex += n);
-        }
-
-        function currentSlide(n) {
-            showPage(pageIndex = n);
-        }
-
-        function showPage(n) {
-            let i;
-            let pages = document.getElementsByClassName("page");
-            if (n > pages.length) {
-                pageIndex = 1;
-            }
-            if (n < 1) {
-                pageIndex = pages.length;
-            }
-            for (i = 0; i < pages.length; i++) {
-                if (pages[i].classList.contains("active")) {
-                    pages[i].classList.remove("active");
-                }
-            }
-            pages[pageIndex - 1].className += " active";
-        }
     </script>
 
 </body>
