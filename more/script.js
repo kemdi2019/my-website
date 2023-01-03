@@ -6,12 +6,10 @@ let footersec = document.getElementById("footer");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 420 || document.documentElement.scrollTop > 420) {
+    if (document.body.scrollTop > 330 || document.documentElement.scrollTop > 330) {
         mybutton.style.display = "block";
-        footersec.classList.add("scroll");
     } else {
         mybutton.style.display = "none";
-        footersec.classList.remove("scroll");
     }
 }
 
