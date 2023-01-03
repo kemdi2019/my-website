@@ -15,9 +15,8 @@
     <link href="../css/style.css" rel="stylesheet" />
 
     <style>
-        .banner {
-            background-color: #242e37;
-            background-image: url('../img/banner-blujay.png');
+        .banner-img .posrel {
+            background-image: url(../img/fs/2.png);
         }
     </style>
 </head>
@@ -26,14 +25,17 @@
     <div class="banner posrel">
         <div class="overlay"></div>
         <div class="heading posrel">
-            <a href="../index.html">Home</a>
+            <a href="../index.html">Return to Homepage</a>
             <h1>BLUJAY</h1>
+        </div>
+        <div class="posabs banner-img">
+            <div class="posrel"></div>
         </div>
     </div>
 
     <section>
         <div class="container">
-            <h3>BRIEF</h3>
+            <h3>INTRO</h3>
             <p>
                 Client asked for a landing page that stayed consistent design-wise and followed the branding. The
                 template required different sections for different purposes. Also this template would be reused for
@@ -67,26 +69,24 @@
 
             <h3>END RESULT</h3>
             <div class="more-img">
-                <img src="../img/fs/5.png" alt="blujay landing page design">
+                <img src="../img/fs/2.png" alt="blujay landing page design">
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="section blue1">
+    <footer id="footer">
         <div class="container">
-            <p>© 2022 kemdi ikejiani. all rights reserved.</p>
-            <div class="divider"></div>
+            <p>© 2023 kemdi ikejiani. all rights reserved.</p>
             <p>
                 <a href="https://github.com/kemdi-dev" target="_blank">github</a> |
                 <a href="https://www.instagram.com/createdbykemdi/" target="_blank">instagram</a> |
-                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">linkedin</a> |
-                <a href="Resume-Kemdi.pdf">resume</a>
+                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">linkedin</a>
             </p>
         </div>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="../img/totop.svg" alt="go to top of the page">
+    <button onclick="topFunction()" id="myBtn" class="btn" title="Go to top">
+        <img src="../img/chevron-t.svg" alt="arrow">
     </button>
 
     <script src="script.js"></script>
