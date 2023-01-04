@@ -250,18 +250,19 @@ li.active a::before {
 
 /*HOME SECTION STYLING*/
 #home {
-  height: 800px;
-  max-height: 95vh;
+  height: 95vh;
+  min-height: 630px;
+  max-height: 840px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 #home .artsy {
-  right: -180px;
+  right: -7px;
   bottom: -100px;
 }
 #home .artsy svg {
-  width: 700px;
+  width: 520px;
   height: auto;
 }
 .headline {
@@ -577,13 +578,13 @@ footer a {
   background-position: center;
   background-position-y: 0;
   background-image: none;
-  animation: toright 0.7s ease, opacityspec 0.2s;
+  animation: toright 0.5s ease, opacityspec 0.2s;
 }
 .banner a {
   text-decoration: underline;
 }
 .more section {
-  animation: opacity 0.7s;
+  animation: opacity 0.5s;
 }
 .more .overlay {
   background-color: #222222;
@@ -702,10 +703,10 @@ footer a {
   stroke-dasharray: 1200;
   stroke-dashoffset: 1200;
   pointer-events: none;
-  animation: drawstroke 0.7s linear forwards;
+  animation: drawstroke 0.6s linear forwards;
 }
 #home .artsy svg #ellipse_1 {
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
 }
 #home .artsy svg circle,
 .hero {
@@ -717,6 +718,12 @@ footer a {
 .page {
   animation: opacityspec 1.8s;
 }
+.bkg.right {
+  transform: translateX(100%);
+}
+.nojs .bkg.right {
+  transform: translateX(0%);
+}
 #about .bkg.anim {
   animation: toleft 0.4s ease-in, opacityspec 0.2s;
 }
@@ -726,6 +733,38 @@ footer a {
 }
 /*END ANIMATION*/
 
+@media screen and (min-width: 601px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #home h1 {
+    display: inline-block;
+  }
+  .bkg {
+    width: 98%;
+  }
+  #portfolio .bkg {
+    left: 0;
+    right: unset;
+    border-radius: 0 20px 20px 0;
+  }
+  #about .bkg {
+    right: 0;
+    left: unset;
+    border-radius: 20px 0 0 20px;
+  }
+  .text {
+    position: relative;
+    z-index: 99;
+  }
+  .sketch {
+    position: relative;
+    z-index: 80;
+  }
+}
 @media screen and (min-width: 1700px) {
   .container {
     margin: 0.5% auto;
@@ -822,7 +861,7 @@ footer a {
 
 @media screen and (max-width: 910px) {
   #home .artsy svg {
-    width: 600px;
+    width: 460px;
   }
   #home .artsy svg path {
     animation: drawstroke 0.55s linear forwards;
@@ -986,6 +1025,7 @@ footer a {
   .menu {
     width: 100%;
     height: 100vh;
+    min-height: 300px;
     left: 0;
     right: 0;
     border-radius: 0;
@@ -1017,7 +1057,7 @@ footer a {
   .scroll nav {
     width: 100%;
     background: #101010;
-    padding: 20px;
+    padding: 25px 20px;
     margin-right: 0;
     left: 0;
   }
@@ -1026,7 +1066,8 @@ footer a {
     margin-right: 0;
   }
   #home {
-    height: 600px;
+    min-height: 490px;
+    max-height: 660px;
   }
   #home .container {
     padding-top: 100px;
@@ -1042,8 +1083,11 @@ footer a {
     height: 100%;
     left: 0;
     right: 0;
-    border-radius: 0;
+    border-radius: 0 0 0 0;
     animation: none;
+  }
+  .bkg.right {
+    transform: translateX(0);
   }
   #portfolio .bkg {
     background: linear-gradient(
@@ -1083,6 +1127,9 @@ footer a {
   }
   .image {
     height: 300px;
+  }
+  .popup-img {
+    min-height: 285px;
   }
   .bkg .btn {
     bottom: 0;
@@ -1144,6 +1191,9 @@ footer a {
   .headline span {
     display: block;
     margin-bottom: 5px;
+  }
+  .close-div.two {
+    display: none;
   }
 }
 
