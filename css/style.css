@@ -251,7 +251,7 @@ li.active a::before {
 /*HOME SECTION STYLING*/
 #home {
   height: 95vh;
-  min-height: 630px;
+  min-height: 620px;
   max-height: 840px;
   width: 100%;
   display: flex;
@@ -425,7 +425,7 @@ li.active a::before {
   max-height: 100%;
 }
 .expand .gallery {
-  max-height: 1325px;
+  max-height: 1335px;
   overflow: scroll;
 }
 .expand .btn {
@@ -764,6 +764,10 @@ footer a {
     position: relative;
     z-index: 80;
   }
+  .gallery,
+  .expand .gallery {
+    overflow: hidden;
+  }
 }
 @media screen and (min-width: 1700px) {
   .container {
@@ -819,7 +823,7 @@ footer a {
     max-height: 1200px;
   }
   .close-div {
-    right: -55px;
+    right: -45px;
   }
   .description a::after {
     left: -50px;
@@ -1255,5 +1259,70 @@ footer a {
   #page404 .bkg {
     left: 0;
     height: 190px;
+  }
+}
+
+/*ADDING FIXED POSITION TO CLOSE BUTTON*/
+.close-div.two {
+  display: none;
+}
+.fixed {
+  position: fixed;
+  right: 55px;
+  bottom: 130px;
+  z-index: 110;
+  margin-bottom: 0;
+}
+.fixedbtm {
+  bottom: -50px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 1760px) {
+  .fixed {
+    right: 6%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .fixed {
+    right: 35px;
+  }
+}
+@media screen and (max-width: 1065px) {
+  .fixed {
+    right: 15px;
+  }
+}
+@media screen and (max-width: 1045px) {
+  .popup-img {
+    width: 98%;
+  }
+  .fixed {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .fixed {
+    right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fixed {
+    right: 10px;
+    bottom: 60px;
+  }
+  .popup-img {
+    width: 100%;
+  }
+}
+@media screen and (max-height: 400px) {
+  .icons,
+  nav {
+    padding-top: 40px;
+  }
+  .clicked .menu {
+    top: 20px;
+  }
+  .fixed {
+    bottom: 17%;
   }
 }
