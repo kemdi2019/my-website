@@ -422,37 +422,7 @@
             body.classList.remove("clicked");
         }
     </script>
-
-    <script>/*
-let pageIndex = 1;
-showPage(pageIndex);
-
-function plusSlides(n) {
-showPage(pageIndex += n);
-}
-
-function currentSlide(n) {
-showPage(pageIndex = n);
-}
-
-function showPage(n) {
-let i;
-let pages = document.getElementsByClassName("page");
-if (n > pages.length) {
-pageIndex = 1;
-}
-if (n < 1) {
-pageIndex = pages.length;
-}
-for (i = 0; i < pages.length; i++) {
-if (pages[i].classList.contains("active")) {
-pages[i].classList.remove("active");
-}
-}
-pages[pageIndex - 1].className += " active";
-}*/
-    </script>
-
+    
     <script>
         (function () {
             var prevScrollpos = window.pageYOffset;
@@ -462,6 +432,12 @@ pages[pageIndex - 1].className += " active";
             var aboutbkg = document.querySelector('#about .bkg');
             var section = document.getElementsByTagName('section');
             var navbar = document.querySelector('.navbar');
+            var expandimg = document.getElementById('forcarousel');
+            var btnexpandimg = document.querySelector('.close-div.one');
+            var imgdesc = document.querySelector('.img-description');
+            var aboutsec = document.getElementById('about');
+            var footer = document.getElementById('footer');
+            
             body.classList.remove("nojs");
 
             function onScroll() {
@@ -475,11 +451,32 @@ pages[pageIndex - 1].className += " active";
                 } else {
                     icons.classList.remove("inview");
                 }
+                
                 if (!elementInViewport(section[0])) {
                     navbar.classList.add("scroll");
                 } else {
                     navbar.classList.remove("scroll");
                 }
+
+                if (elementInViewport(section[1]) && document.getElementById("popup").style.display === "block") {
+                    if (elementInViewport(expandimg) && !elementInViewport(imgdesc)) {
+
+                        if (elementInViewport(footer) || elementInViewport(section[2])) {
+                            btnexpandimg.classList.add("fixedbtm");
+                            btnexpandimg.classList.remove("fixed");
+                        } else {
+                            btnexpandimg.classList.add("fixed");
+                            btnexpandimg.classList.remove("fixedbtm");
+                        }
+                    } else {
+                        btnexpandimg.classList.remove("fixed");
+                        btnexpandimg.classList.remove("fixedbtm");
+                    }
+                } else {
+                    btnexpandimg.classList.remove("fixed");
+                    btnexpandimg.classList.remove("fixedbtm");
+                }
+                
             }
 
             function elementInViewport(el) {
