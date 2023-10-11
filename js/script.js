@@ -2,14 +2,13 @@ var html = document.getElementsByTagName("html")[0];
 var body = document.getElementsByTagName("body")[0];
 var burger = document.querySelector(".burger");
 var link = document.querySelectorAll("nav a");
+var header1 = document.getElementsByTagName("header")[0];
 
 for (var i = 0; i < link.length; i++) {
   var links = link[i];
-  links.setAttribute("onclick", "isNavClicked()");
-}
-
-function isNavClicked() {
-  html.classList.remove("clicked");
+  if (header1) {
+    links.setAttribute("onclick", "isNavClicked()");
+  }
 }
 
 burger.onclick = function () {
@@ -19,6 +18,14 @@ burger.onclick = function () {
     html.classList.add("clicked");
   }
 };
+
+function isNavClicked() {
+  var delayInMilliseconds = 700; //in millisec
+
+  setTimeout(function () {
+    html.classList.remove("clicked");
+  }, delayInMilliseconds);
+}
 
 (function () {
   var prevScrollpos = window.pageYOffset;
@@ -171,4 +178,3 @@ for (var i = 0; i < footerimg.length; i++) {
   var footeralt = footerdesc[i].innerHTML;
   footerimgs.alt = footeralt;
 }
-
