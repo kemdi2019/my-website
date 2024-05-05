@@ -49,7 +49,7 @@ h3 {
 h3::before {
   content: "";
   display: inline-block;
-  background-image: url(/img/chevron-r.svg);
+  background-image: url(../img/chevron-r.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 10px;
