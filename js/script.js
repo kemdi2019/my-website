@@ -1,110 +1,92 @@
-var html = document.getElementsByTagName("html")[0];
-var body = document.getElementsByTagName("body")[0];
-var burger = document.querySelector(".burger");
-var link = document.querySelectorAll("nav a");
-var header1 = document.getElementsByTagName("header")[0];
-
-for (var i = 0; i < link.length; i++) {
-  var links = link[i];
-  if (header1) {
-    links.setAttribute("onclick", "isNavClicked()");
-  }
+//back to top button behaviour
+let mybutton = document.getElementById("mybtn");
+function topFunction() {
+  //document.getElementsByTagName("html")[0].classList.add("testsss");
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-burger.onclick = function () {
-  if (html.classList.contains("clicked")) {
-    html.classList.remove("clicked");
-  } else {
-    html.classList.add("clicked");
-  }
-};
-
-function isNavClicked() {
-  var delayInMilliseconds = 700; //in millisec
-
-  setTimeout(function () {
-    html.classList.remove("clicked");
-  }, delayInMilliseconds);
-}
-
+//scrolling functionality
 (function () {
   var prevScrollpos = window.pageYOffset;
 
-  var spacing = document.querySelector(".snap .spacing");
-  var projects = document.querySelectorAll(".wrapper .project");
-  var heading = document.querySelectorAll(".wrapper h2");
-  var sections = document.getElementsByTagName("section");
-  var footer = document.getElementsByTagName("footer")[0];
-  var hero = document.getElementsByTagName("header")[0];
-  var scroll = document.querySelectorAll(".scrollbar .dot");
-  var scrollsec = document.getElementsByClassName("section");
+  var htmlsec = document.getElementsByTagName("html")[0];
+  //var bodysec = document.getElementsByTagName("body")[0];
+  var hero = document.getElementById("home");
+  var section = document.querySelectorAll("section");
+  var projectid = document.getElementById("projects");
+  var aboutid = document.getElementById("about");
+  var projects = document.getElementsByClassName("project");
+  var projecth2 = document.querySelectorAll(".project h2");
+  var thumbnail = document.querySelector(".project-bkgimg");
+  var carousel = document.querySelectorAll(".project-carousel");
 
-  var spacingcomp = document.getElementById("spacing");
-  var summary = document.getElementById("summary");
-  var navbar = document.querySelectorAll("#summary nav")[0];
-  var totop = document.getElementsByClassName("totop")[0];
+  var scroll = document.querySelectorAll(".scrollbar .dot");
+  var scrollsec = document.querySelectorAll("section > .container");
 
   function onScroll() {
-    var currentScrollPos = window.pageYOffset;
+    var visible = document.querySelector(".visible");
 
+    var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 
     if (hero) {
-      hero.classList.add("proceed");
-      if (elementInViewport(sections[0]) || elementInViewport(footer)) {
-        hero.classList.add("proceed");
+      if (elementInViewport(hero)) {
+        htmlsec.classList.add("hero-view");
       } else {
-        hero.classList.remove("proceed");
+        htmlsec.classList.remove("hero-view");
       }
     }
-
-    if (navbar) {
-      if (elementInViewport(summary) && !elementInViewport(spacingcomp)) {
-        summary.classList.add("scrolled");
-        totop.style.opacity = "1";
+    if (projectid) {
+      if (elementInViewport(projectid) && !elementInViewport(aboutid)) {
+        htmlsec.classList.add("fixed");
       } else {
-        summary.classList.remove("scrolled");
-        totop.style.opacity = "0";
+        htmlsec.classList.remove("fixed");
       }
     }
-
+    if (htmlsec) {
+      if (elementInViewport(hero) || elementInViewport(aboutid)) {
+        htmlsec.classList.add("scroll-snap");
+      } else {
+        htmlsec.classList.remove("scroll-snap");
+      }
+    }
+    var list = [];
     for (var i = 0; i < projects.length; i++) {
+      var projh2 = projecth2[i];
+      var carousels = carousel[i];
       var projs = projects[i];
 
-      if (!elementInViewport(spacing) && elementInViewport(sections[0])) {
-        sections[0].classList.add("portfolio");
-      } else {
-        sections[0].classList.remove("portfolio");
+      if (visible) {
+        var imgsource = document.querySelectorAll(".visible img");
+        thumbnail.style.backgroundImage = "url(" + imgsource[0].src + ")";
+      }
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+
+    function showDivs(n) {
+      var ii;
+      var x = document.querySelectorAll("#div0 .project-carousel img");
+      if (visible) {
+        x = document.querySelectorAll(".visible .project-carousel img");
       }
 
-      if (elementInViewport(sections[0])) {
-        if (elementInViewport(heading[0])) {
-          projs.classList.remove("view");
-          projects[0].classList.add("view");
-        }
-        if (elementInViewport(heading[1])) {
-          projs.classList.remove("view");
-          projects[1].classList.add("view");
-        }
-        if (elementInViewport(heading[2])) {
-          projs.classList.remove("view");
-          projects[2].classList.add("view");
-        }
-      } else {
-        projs.classList.remove("view");
+      if (n > x.length) {
+        slideIndex = 1;
       }
-
-      var thumbnail = document.querySelectorAll(".thumbnail img")[0];
-      var imgsources = document.querySelectorAll(".view img");
-      var imgalt = document.querySelectorAll(".view h2");
-
-      var source = imgsources[i];
-      var alts = imgalt[i];
-
-      if (source) {
-        thumbnail.src = source.src;
-        thumbnail.alt = "screenshot of " + alts.innerText;
+      if (n < 1) {
+        slideIndex = x.length;
       }
+      for (ii = 0; ii < x.length; ii++) {
+        x[ii].classList.remove("active");
+      }
+      x[slideIndex - 1].classList.add("active");
     }
 
     if (scroll[0]) {
@@ -151,30 +133,55 @@ function isNavClicked() {
   window.onscroll = onScroll;
 })();
 
-let mybutton = document.getElementById("myBtn");
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+//adds id name to project onload and adds 'visible' class to project when project is in viewport
+var projects = document.getElementsByClassName("project");
+var list = [];
+for (var i = 0; i < projects.length; i++) {
+  var projs = projects[i];
+
+  list.push("div" + i);
+
+  var listindex = list.length;
+
+  if (listindex > 0) {
+    projs.setAttribute("id", "div" + i);
+  }
 }
 
-var clrs = document.querySelectorAll(".description .colours li");
-var thumbnail = document.querySelectorAll(".thumbnail img")[0];
-var imgsources = document.querySelectorAll(".description img")[0];
-var footerimg = document.querySelectorAll("footer img");
-var footerdesc = document.querySelectorAll("footer .description");
+let callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("visible", entry.isIntersecting);
+  });
+};
+let observer = new IntersectionObserver(callback, {
+  threshold: [0.5], // If 50% of the element is in the screen, we count it!
+  // Can change the thresholds based on your needs. The default is 0 - it'll run only when the element first comes into view
+});
 
-if (imgsources) {
-  thumbnail.src = imgsources.src;
+list.forEach((d) => {
+  const div = document.getElementById(d);
+  if (div) observer.observe(div);
+});
+
+//make carousel images visible when in viewport
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs((slideIndex += n));
 }
 
-for (var i = 0; i < clrs.length; i++) {
-  var bkg = clrs[i];
-  var hex = bkg.innerHTML;
-  bkg.style.backgroundColor = hex;
-}
-
-for (var i = 0; i < footerimg.length; i++) {
-  var footerimgs = footerimg[i];
-  var footeralt = footerdesc[i].innerHTML;
-  footerimgs.alt = footeralt;
+function showDivs(n) {
+  var ii;
+  var x = document.querySelectorAll(".visible .project-carousel img");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (ii = 0; ii < x.length; ii++) {
+    x[ii].classList.remove("active");
+  }
+  x[slideIndex - 1].classList.add("active");
 }
