@@ -531,6 +531,15 @@ video {
 }
 
 @media screen and (max-width: 1200px) {
+  .hero-view {
+    scroll-behavior: unset;
+  }
+  html.scroll-snap {
+    scroll-snap-type: none;
+  }
+  .scroll-snap section {
+    scroll-snap-align: unset;
+  }
   .scrollbar {
     display: none;
   }
@@ -560,20 +569,11 @@ video {
 }
 
 @media screen and (max-width: 640px) {
-  .hero-view {
-    scroll-behavior: unset;
-  }
-  html.scroll-snap {
-    scroll-snap-type: none;
-  }
-  .scroll-snap section {
-    scroll-snap-align: unset;
-  }
   h1 {
     font-size: 3em;
   }
   h2 {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   header {
     background-color: #110c16;
