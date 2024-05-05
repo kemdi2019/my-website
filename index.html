@@ -1,355 +1,618 @@
-<!DOCTYPE html>
-<html lang="en" class="hero-view">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kemdi I. | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
-
-<body>
-    <!--background columns-->
-    <div class="bkg">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <!--end background columns-->
-
-
-    <header>
-        <div class="container">
-            <ul>
-                <li>
-                    <button onclick="topFunction()" id="mybtn" class="btn" title="Back to top">
-                        Back to top
-                    </button>
-                </li>
-                <li>
-                    <a href="https://github.com/kemdi-dev/" target="_blank">Github</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LinkedIn</a>
-                </li>
-            </ul>
-            <ul class="email">
-                <li>
-                    Contact me at <span>kemdi.ik[at]gmail[dot]com</span>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <!--ignore, fixes overscroll issue-->
-    <div style="scroll-snap-align:none;height: 2px;min-height: 0;"> </div>
-    <!--ignore-->
-
-
-    <section id="home">
-        <div class="container">
-            <p>hi, i'm</p>
-            <h1>KEMDI <br>IKEJIANI</h1>
-            <div class="arrow-wrapper">
-                <a href="#projects" class="arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.601 127.375">
-                        <g transform="translate(-277.552 -921.771)">
-                            <path id="Path_26" data-name="Path 26" d="M6491.853,776.227v90"
-                                transform="translate(-6207 145.544)" fill="none" stroke="#f7c427" stroke-width="2" />
-                            <path id="Path_55" data-name="Path 55" d="M8838.813,2070.339l10.895-7.3-10.895-7.3Z"
-                                transform="translate(2347.891 -7800.561) rotate(90)" fill="#f7c427" />
-                        </g>
-                    </svg>
-
-                </a>
-                <p>
-                    ui/ux designer <br>
-                    & front-end developer
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects">
-        <div class="project-bkg">
-            <div>
-                <div class="project-bkgimg"></div>
-            </div>
-        </div>
-
-        <div class="container">
-
-            <div class="project visible">
-                <h2>Wealthbar -> CI Direct Investing</h2>
-
-                <div class="l-col">
-
-                    <p class="subtitle">
-                        Solo designer - Design / UX research / design overhaul / new experience
-                    </p>
-
-                    <p>
-                        Wealthbar’s transition to CI Direct Investing required a complete overhaul from top to bottom,
-                        including coding rewrites, design language, and branding colours.
-                    </p>
-                    <div class="button">
-                        <a href="https://createdbykemdi.com/project/cidi.html">VIEW PROJECT SUMMARY</a>
-                    </div>
-                </div>
-                <div class="r-col">
-                    <div class="project-carousel">
-
-                        <img class="active" src="https://createdbykemdi.com/project/img/cidi-dashboard.jpg"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/cidi-onboarding-flowchart.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/cidi-0.jpg" alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/cidi-onboarding-1.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/cidi-icons.png" alt="screenshot of insomnia">
-
-                        <div class="carousel-arrows">
-                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project">
-                <h2>CI Prestige Tool</h2>
-
-                <div class="l-col">
-
-                    <p class="subtitle">
-                        Lead designer - UX research / Design / Mobile responsiveness / Front-end development
-                    </p>
-
-                    <p>
-                        I was tasked with bringing an internal app to the modern age. It had been several years since
-                        the last update. It was an exhaustive project with hand-in-hand collaboration with the dev and
-                        QA teams. I was the lead UI/UX designer on the project.
-                    </p>
-                    <div class="button">
-                        <a href="https://createdbykemdi.com/project/ciprestige.html">VIEW PROJECT SUMMARY</a>
-                    </div>
-                </div>
-
-                <div class="r-col">
-                    <div class="project-carousel">
-
-                        <img class="active" src="https://createdbykemdi.com/project/img/prestige-0.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/prestige-flowchart.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/prestige-selection.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/prestige-selection-made.png"
-                            alt="screenshot of insomnia">
-                        <img src="https://createdbykemdi.com/project/img/prestige-form-0.png"
-                            alt="screenshot of insomnia">
-
-                        <div class="carousel-arrows">
-                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project">
-                <h2>Mitto</h2>
-
-                <div class="l-col">
-
-                    <p class="subtitle">
-                        Solo designer/developer - Design / New experience / Mobile responsiveness / Front-end
-                        development
-                    </p>
-
-                    <p>
-                        I was tasked with designing and enhancing the experience of multiple pages on the Motto site.
-                        Pages were supposed to attract a more youthful audience; a fun environment. </p>
-                    <div class="button">
-                        <a href="https://createdbykemdi.com/project/mitto.html">VIEW PROJECT SUMMARY</a>
-                    </div>
-                </div>
-                <div class="r-col">
-                    <div class="project-carousel">
-
-                        <img src="https://createdbykemdi.com/project/img/mitto-example-2.jpg" alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/mitto-0.png" alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/mitto-mobile1.png" alt="screenshot of Wake">
-
-                        <div class="carousel-arrows">
-                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project">
-                <h2>Booktopia</h2>
-
-                <div class="l-col">
-
-                    <p class="subtitle">
-                        Solo designer/developer - UI Design / Graphic Design / Research / Illustration
-                    </p>
-
-                    <p>
-                        I was tasked with designing and enhancing the experience of multiple pages on the Motto site.
-                        Pages were supposed to attract a more youthful audience; a fun environment. </p>
-                    <div class="button">
-                        <a href="https://createdbykemdi.com/project/booktopia.html">VIEW PROJECT SUMMARY</a>
-                    </div>
-                </div>
-                <div class="r-col">
-                    <div class="project-carousel">
-
-                        <img src="https://createdbykemdi.com/project/img/booktopia-web.png" alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/booktopia-wireframe.png"
-                            alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/booktopia-0.png" alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/booktopia-app-2.jpg" alt="screenshot of Wake">
-                        <img src="https://createdbykemdi.com/project/img/booktopia-app-3.jpg" alt="screenshot of Wake">
-
-                        <div class="carousel-arrows">
-                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project">
-                <h2>Illustrations</h2>
-
-                <div class="l-col">
-
-                    <p class="subtitle">
-                        Adobe Illustrator / Photoshop / Procreate
-                    </p>
-
-                    <p>
-                        I draw sometimes :)
-                    </p>
-                    <div class="button">
-                        <a href="https://createdbykemdi.com/project/illustrations.html">VIEW illustrations</a>
-                    </div>
-                </div>
-                <div class="r-col">
-                    <div class="project-carousel">
-
-                        <img class="active" src="https://createdbykemdi.com/img/normal-people.jpg"
-                            alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/peaches.jpg" alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/couple.jpg" alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/boat.jpg" alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/glasses.png" alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/portrait.png" alt="screenshot of Blight Souls">
-                        <img src="https://createdbykemdi.com/img/product-mockup.jpg" alt="screenshot of Blight Souls">
-
-                        <div class="carousel-arrows">
-                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
-                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <section id="about">
-        <div class="container">
-            <h2>Education</h2>
-            <h3>York University - Toronto, Canada</h3>
-            <p>
-                Digital Media (Computational Arts, BA Honours)
-            </p>
-            <p class="subtitle">
-                Relevant Courses
-            </p>
-            <p>
-                Human-computer interaction, User Interface, Data visualization, Design theory, Web development, Object
-                Oriented Programming-Java, Data Structures
-            </p>
-
-            <h2>Contact</h2>
-            <h3>kemdi.ik[at]gmail[dot]com</h3>
-            <p>
-                <a href="https://github.com/kemdi-dev/" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LinkedIn</a>
-            </p>
-        </div>
-    </section>
-
-
-    <div class="scrollbar">
-        <div onclick="currentDot(1)" class="dot active">
-            <a href="#"></a>
-        </div>
-        <div onclick="currentDot(2)" class="dot">
-            <a href="#projects"></a>
-        </div>
-        <div onclick="currentDot(3)" class="dot">
-            <a href="#about"></a>
-        </div>
-    </div>
-
-
-    <!--ignore, fixes overscroll issue-->
-    <div style="scroll-snap-align:none;height: 2px;min-height: 0;"> </div>
-    <!--ignore-->
-
-
-    <script src="js/script.js"></script>
-
-    <script>
-        //nav sidebar indicators
-        let dotIndex = 1;
-        showDots(dotIndex);
-
-        function plusDots(n) {
-            showDots(dotIndex += n);
-        }
-
-        function currentDot(n) {
-            showDots(dotIndex = n);
-        }
-        function showDots(n) {
-            let k;
-            let slides = document.querySelectorAll("section > .container");
-            let navdots = document.getElementsByClassName("dot");
-            if (n > slides.length) { dotIndex = 1 }
-            if (n < 1) { dotIndex = slides.length }
-            for (k = 0; k < navdots.length; k++) {
-                navdots[k].className = navdots[k].className.replace(" active", "");
-            }
-            navdots[dotIndex - 1].className += " active";
-        }
-    </script>
-
-</body>
-
-</html>
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background-color: #1a1221;
+  color: #fff;
+}
+html,
+body {
+  width: 100%;
+}
+html {
+  scroll-snap-type: none;
+}
+body {
+  background-image: none;
+}
+section {
+  scroll-snap-align: none;
+}
+html.scroll-snap {
+  scroll-snap-type: y mandatory;
+}
+.scroll-snap section {
+  scroll-snap-align: start;
+}
+h1 {
+  font-size: 5em;
+  line-height: 1.1em;
+  letter-spacing: 3px;
+  display: inline-block;
+}
+h2 {
+  font-size: 3em;
+  margin: 10px 0;
+}
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #f7c427;
+  margin: 20px 0;
+}
+h3::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/chevron-r.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+p {
+  margin: 10px 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.subtitle {
+  font-weight: 600;
+}
+li {
+  list-style: none;
+  font-size: 15px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  color: #f7c427;
+}
+p a {
+  text-decoration: underline;
+}
+p a:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #f7c427;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1a1221;
+  background: #f7c427;
+}
+::selection {
+  color: #1a1221;
+  background: #f7c427;
+}
+
+.bkg {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+}
+.bkg div {
+  background-color: #fff;
+  height: 100%;
+  display: inline-block;
+  margin-left: -4px;
+}
+.bkg div:nth-child(1) {
+  width: 190px;
+  opacity: 0.02;
+}
+.bkg div:nth-child(2) {
+  width: 120px;
+  opacity: 0.06;
+}
+.bkg div:nth-child(3) {
+  width: 40px;
+  opacity: 0.1;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: end;
+}
+header .container {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+header ul {
+  display: inline;
+}
+header ul * {
+  font-weight: 600;
+  font-size: 12px;
+}
+header ul li {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+#mybtn {
+  background-color: transparent;
+  color: #f7c427;
+  cursor: pointer;
+}
+#mybtn::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/chevron-u.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 8px;
+  margin-right: 5px;
+}
+.email {
+  max-height: 0;
+  width: 0;
+  overflow: hidden;
+  transition: 0.3s max-height;
+  display: block;
+}
+.email span {
+  color: #f7c427;
+  margin-left: 5px;
+}
+header .container:hover .email {
+  max-height: 30px;
+  width: unset;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  overflow: scroll;
+}
+section .container {
+  position: relative;
+  padding: 0 7%;
+  width: 100%;
+  max-width: 2100px;
+  margin: 0 auto;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+}
+#home p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+}
+.arrow-wrapper {
+  margin-top: 80px;
+  position: relative;
+}
+.arrow-wrapper p {
+  margin-left: 40px;
+}
+.arrow {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  cursor: pointer;
+}
+
+#projects {
+  position: relative;
+}
+#projects .container {
+  height: 100vh;
+  overflow: scroll;
+}
+#projects h2 {
+  color: #f7c427;
+  margin: 0 0;
+  margin-top: 50px;
+}
+.project-bkg {
+  height: 100%;
+  position: absolute;
+  width: 95%;
+  right: 0;
+  top: 90px;
+  background-color: #000;
+  opacity: 1;
+  transition: 0.3s opacity;
+}
+.project-bkg > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.project-bkgimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/insomnia-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.05;
+}
+.project {
+  height: 100vh;
+  padding: 80px 0;
+  overflow: scroll;
+}
+.l-col {
+  width: 55%;
+}
+.r-col {
+  width: 40%;
+  margin-left: 4%;
+  min-height: 60px;
+}
+.l-col,
+.r-col {
+  display: inline-block;
+  vertical-align: top;
+}
+.button {
+  width: 100%;
+}
+.button a {
+  color: #fff;
+  position: relative;
+  padding-left: 15px;
+  margin-top: 40px;
+  z-index: 1;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.button a::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 5px;
+  height: 45px;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  background-color: #f7c427;
+  transform: translate(0, -50%);
+  transition: 0.3s width;
+}
+.button a::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f7c427;
+  margin-left: 15px;
+  margin-right: 18px;
+  transition: 0.3s background-color;
+}
+.button a,
+.button a:hover {
+  background-color: transparent;
+  background-image: none;
+}
+.button a:hover::before {
+  width: 100%;
+}
+.button a:hover::after {
+  background-color: #1a1221;
+}
+.button a:hover {
+  color: #1a1221;
+}
+.project-carousel {
+  position: relative;
+  margin-top: 20px;
+  max-height: 440px;
+  min-height: 120px;
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.project-carousel img {
+  width: 100%;
+  display: none;
+}
+.hero-view .project {
+  opacity: 1;
+}
+.carousel-arrows {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.project-carousel img.active {
+  display: block;
+}
+.project-carousel button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #1a1221;
+}
+.project-carousel button:hover {
+  color: #f7c427;
+}
+
+#about {
+  padding: 60px 0;
+}
+#about p {
+  width: 60%;
+}
+#about h2 {
+  margin: 30px 0;
+}
+
+.scrollbar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  text-align: right;
+  transform: translate(0, -50%);
+}
+.hero-view .scrollbar {
+  opacity: 0;
+  pointer-events: none;
+}
+.scrollbar .dot {
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  margin: 30px 0;
+  transition: 0.3s width;
+}
+.scrollbar .dot:hover {
+  width: 30px;
+}
+.scrollbar .dot.active {
+  width: 30px;
+}
+.scrollbar .dot a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-view {
+  scroll-behavior: smooth;
+}
+.hero-view .project-bkg {
+  opacity: 0;
+}
+.hero-view #mybtn {
+  display: none;
+}
+
+@keyframes slideintro {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home,
+header,
+.scrollbar,
+#projects,
+section .container,
+.slideshow-container {
+  animation: opacity 1.6s;
+}
+.bkg div {
+  animation: slideintro 0.8s 0.2s;
+}
+.bkg {
+  animation: opacity 0.4s;
+}
+.project {
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+.project.visible {
+  opacity: 1;
+}
+#projects,
+#projects .container {
+  height: unset;
+}
+.fixed .project-bkg {
+  position: fixed;
+}
+
+section.no-hero {
+  height: unset;
+  padding: 40px 0;
+}
+.no-hero h1 {
+  margin-top: 60px;
+}
+.slideshow-container {
+  width: 95%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 60px;
+}
+.mySlides,
+.mySlides1,
+.mySlides2 {
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #f09b75;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+video {
+  max-width: 90%;
+  height: auto;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .scrollbar {
+    display: none;
+  }
+  .project-bkg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  #projects h2 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .project {
+    min-height: 400px;
+  }
+  .l-col,
+  .r-col {
+    width: 100%;
+    margin: 20px 0;
+  }
+  #about p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero-view {
+    scroll-behavior: none;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  header {
+    background-color: #110c16;
+  }
+  .hero-view header {
+    background-color: transparent;
+  }
+  .hero-view .email {
+    max-height: 0;
+  }
+  .email {
+    max-height: unset;
+    margin-top: 10px;
+    width: unset;
+  }
+  .bkg {
+    width: 55%;
+    overflow: hidden;
+    display: flex;
+  }
+  .bkg div {
+    margin-left: 0;
+  }
+  .bkg div:nth-child(1) {
+    width: 60%;
+  }
+  .bkg div:nth-child(2) {
+    width: 30%;
+  }
+  .bkg div:nth-child(3) {
+    width: 10%;
+  }
+  .project-carousel {
+    max-height: 300px;
+    overflow: hidden;
+  }
+  .project,
+  #about {
+    padding: 95px 0;
+  }
+}
+
+@media screen and (min-height: 640px) and (max-height: 1500px) {
+  .project {
+    height: unset;
+    min-height: 100vh;
+  }
+}
