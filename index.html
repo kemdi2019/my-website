@@ -1,312 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="hero-view">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kemdi Ani, UI/UX Designer</title>
-    <meta content="Portfolio of UI/UX Designer and Developer, Kemdi Ani" name="description" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Kemdi I. | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@100;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/img/favicon.png">
 </head>
 
 <body>
-    <nav>
-        <div class="container">
-            <div class="left">
-                <a href="#"><span>Kemdi Ani</span><span class="mobile">Home</span> </a>
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile">
-                    <a target="_blank" href="https://github.com/kemdi-dev/">GITHUB</a>
-                    <a target="_blank" href="https://www.linkedin.com/in/kemdi-ikejiani/">LINKEDIN</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div class="burger mobile">
-        <div class="line"></div>
-        <div class="line"></div>
+    <!--background columns-->
+    <div class="bkg">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+    <!--end background columns-->
 
-    <header class="">
+
+    <header>
         <div class="container">
-            <div class="title">
-                <h1>Hi, I'm Kemdi</h1>
-            </div>
-            <div class="description">
-                <p>UI/UX designer at CI Financial</p>
-                <p>Previously: Marketing Automation Canada & Elle Hacks</p>
-            </div>
-            <div class="socials">
-                <a target="_blank" href="https://github.com/kemdi-dev/">GITHUB</a>
-                <a target="_blank" href="https://www.linkedin.com/in/kemdi-ikejiani/">LINKEDIN</a>
-            </div>
-        </div>
-
-        <div class="highlights">
-            <div class="container">
-                <div class="image">
-                    <a href="#one">
-                        <img src="project/img/cidi-0.jpg" alt="ci direct investing">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="#two">
-                        <img src="project/img/prestige-0.png" alt="ci prestige">
-                    </a>
-                </div>
-                <div class="image">
-                    <a href="#three">
-                        <img src="project/img/mitto-0.png" alt="mitto">
-                    </a>
-                </div>
-            </div>
+            <ul>
+                <li>
+                    <button onclick="topFunction()" id="mybtn" class="btn" title="Back to top">
+                        Back to top
+                    </button>
+                </li>
+                <li>
+                    <a href="https://github.com/kemdi-dev/" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+            <ul class="email">
+                <li>
+                    Contact me at <span>kemdi.ik[at]gmail[dot]com</span>
+                </li>
+            </ul>
         </div>
     </header>
 
-    <div class="snap">
-        <div class="spacing child section"></div>
+    <!--ignore, fixes overscroll issue-->
+    <div style="scroll-snap-align:none;height: 2px;min-height: 0;"> </div>
+    <!--ignore-->
 
-        <section id="projects" class="section child">
-            <div class="thumbnail">
-                <img src="" alt="">
+
+    <section id="home">
+        <div class="container">
+            <p>hi, i'm</p>
+            <h1>KEMDI <br>IKEJIANI</h1>
+            <div class="arrow-wrapper">
+                <a href="#projects" class="arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.601 127.375">
+                        <g transform="translate(-277.552 -921.771)">
+                            <path id="Path_26" data-name="Path 26" d="M6491.853,776.227v90"
+                                transform="translate(-6207 145.544)" fill="none" stroke="#f7c427" stroke-width="2" />
+                            <path id="Path_55" data-name="Path 55" d="M8838.813,2070.339l10.895-7.3-10.895-7.3Z"
+                                transform="translate(2347.891 -7800.561) rotate(90)" fill="#f7c427" />
+                        </g>
+                    </svg>
+
+                </a>
+                <p>
+                    ui/ux designer <br>
+                    & front-end developer
+                </p>
             </div>
-            <div class="container">
-                <div class="wrapper">
-                    <div class="project clr1 view" id="one">
-                        <div>
-                            <h2>Wealthbar -> CI Direct Investing</h2>
-                            <ul class="tasks">
-                                <li>UX RESEARCH</li>
-                                <li>DESIGN</li>
-                                <li>NEW EXPERIENCE</li>
-                            </ul>
-                            <p>
-                                Wealthbar’s transition to CI Direct Investing required a complete overhaul from top to
-                                bottom, including coding rewrites, design language, and branding colours.
-                            </p>
-                            <a href="project/cidi.html">VIEW PROJECT SUMMARY >></a>
-                            <img src="project/img/cidi-dashboard.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="project clr2" id="two">
-                        <div>
-                            <h2>CI Prestige Tool</h2>
-                            <ul class="tasks">
-                                <li>UX RESEARCH</li>
-                                <li>DESIGN</li>
-                                <li>MOBILE RESPONSIVENESS</li>
-                                <li>FRONT-END DEVELOPMENT</li>
-                            </ul>
-                            <p>
-                                I was tasked with bringing an internal app to the modern age.
-                            </p>
-                            <a href="project/ciprestige.html">VIEW PROJECT SUMMARY >></a>
-                            <img src="https://createdbykemdi.com/projects/img/prestige-0.png" alt="">
-                        </div>
-                    </div>
-                    <div class="project clr3" id="three">
-                        <div>
-                            <h2>Mitto</h2>
-                            <ul class="tasks">
-                                <li>DESIGN</li>
-                                <li>NEW EXPERIENCE</li>
-                                <li>MOBILE RESPONSIVENESS</li>
-                                <li>FRONT-END DEVELOPMENT</li>
-                            </ul>
-                            <p>
-                                I was tasked with designing and enhancing the experience of multiple pages on the Motto
-                                site.
-                            </p>
-                            <a href="project/mitto.html">VIEW PROJECT SUMMARY >></a>
-                            <img src="https://createdbykemdi.com/projects/img/mitto-example-1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="highlights">
-                <div class="container">
-                    <div class="image"></div>
-                    <div class="image"></div>
-                    <div class="image"></div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section child">
-            <div class="container">
-                <h2>Personal Projects</h2>
-                <div class="gallery">
-                    <div class="frame">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="54.541" height="94.286"
-                            viewBox="0 0 54.541 94.286">
-                            <g transform="translate(0.241 0.473)">
-                                <path
-                                    d="M12703.966,3147.943l.887,13.054s6.945,1.673,8.145-1.063,1.188-12.591,0-13.431-8.145.578-8.145.578"
-                                    transform="translate(-12694.977 -3122.142)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12736.725,3149.3l-.383,11.278s.908.978,3.546,1.275a11.266,11.266,0,0,0,3.725,0l3.172-9.909s-5.621-1.815-9.436-1.838"
-                                    transform="translate(-12709.365 -3123.877)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12707.224,3195.016s-.68,11.477,0,12.1,9.772,1.413,10.527,0,.461-12.146-.483-13.212-7.561,0-7.561,0"
-                                    transform="translate(-12696.655 -3148.924)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12708.661,3243.745s-1.544,11.223-.581,12.334,10.61,0,10.61,0,.381-9.124-.856-11.212S12708.661,3243.745,12708.661,3243.745Z"
-                                    transform="translate(-12697.132 -3177.346)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12744.587,3242.917s-1.652,11.026,0,12.73,9.263,0,9.263,0l2.593-13.191S12746.175,3243.732,12744.587,3242.917Z"
-                                    transform="translate(-12717.611 -3176.741)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12746.405,3194.01c-2.1.67-1.772,14.763-.625,14.937s11.028-.692,11.36-1.7.117-12.056-1.5-13.232S12748.5,3193.339,12746.405,3194.01Z"
-                                    transform="translate(-12718.189 -3148.85)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12684.254,3093.792s.219,31.643,0,45.858-2.293,39.8,0,42.3,27.852,1.978,34.624,1.753,10.292-2.608,10.292-2.608,5.1-31.9,6.56-53.021,2.253-32.833,0-34.282-18.493-2.634-25.853-3.069-20.314-1.143-22.213,2.071-.263,17.106,0,29.788-2.358,48.4.848,52.693,34.818.967,34.818.967,8.728-62.672,7.271-72.907-15.448-8.459-15.448-8.459.772,4.993-1.533,5.129-14,1.013-14.6-1.029a11.254,11.254,0,0,1-.472-3.682l-9.277.426"
-                                    transform="translate(-12683.185 -3090.53)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                            </g>
-                        </svg>
-                        <div class="description">
-                            <p>booktopia</p>
-                        </div>
-                        <a href="project/booktopia.html"></a>
-                    </div>
-
-                    <div class="frame">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="69.648" height="102.971"
-                            viewBox="0 0 69.648 102.971">
-                            <path
-                                d="M12355.474,3484.565s-10.448-5.019-10.368-14.169,5.572-13.471,11.952-13.34,12.4,6.268,11.757,14.7-5.918,16.72-11.757,21.544-16.214,8.818-23.873,7.4-10.588-7.518-9.677-14.538,9.668-8.171,16.085-6.277a24.127,24.127,0,0,1,15.881,17.091,40.124,40.124,0,0,1-2.248,26.433c-3.849,8.941-10.9,11.392-15.248,9.876s-5.7-11.922,0-22.633,15.441-14.43,21.226-16.522,15.865-1.918,21.336,1.687,10.521,11.943,7.393,17.161-10.794,4.883-15.385,1.009-6.729-16.7-3.732-27.05,16.955-21.48,22.306-12.418-9.8,20.49-16.391,23.261-20.46,5.769-22.241-.418,3.071-9.1,6.28-6.436,9.666,16.114,9.175,33.933-10.886,34.627-10.886,34.627"
-                                transform="translate(-12322.987 -3456.702)" fill="none" stroke="#000"
-                                stroke-width="0.7" />
-                        </svg>
-                        <div class="description">
-                            <p>illustrations</p>
-                        </div>
-                        <a href="/project/illustrations.html"></a>
-                    </div>
-
-                    <div class="frame">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="101.099" height="68.673"
-                            viewBox="0 0 101.099 68.673">
-                            <path
-                                d="M11730,3524.964s-31.518,4.141-31.968,2.342,4.99-2.959,6.8-3.066,6.532-.2,6.532,1.063-5.03,3.226-7.338,3.6-5.26.466-7.344,1.836-7.8,14.65-8.6,32.566,1.009,28.54,8.6,28.837,15.694-9.768,19.245-14.628,11.017-15.366,11.017-20.2-5.6-5.693-8.97-3.395-4.059,7.724-1.19,11.167,12.087,4.133,20.634,4.164,19.162-3.83,21.36-8.77-.714-8.443-3.595-8.443-5.418,2.759-4.494,7.179a41.336,41.336,0,0,0,8.089,17.131c5.178,6.72,11.235,14.463,21.479,14.455s8.313-27.676,6.9-37.288-4.182-20.861-12.848-23.557-14.18-2.034-14.336-4.424,14.729-.935,14.336,2.217-12.9-.207-23.041-.737-30.46-.274-38.724,3.172-9.4,6.6-9.4,8.94,2.686,3.17,4.762,2.2,2.874-4.212,1.44-5.667-7.035-2.561-11.311,3.135-.1,8.8,3.254,7.61,4.654-6.052-.511-4.616-3.324,8.554-.47,10.608,7.363-2.17,7.286-5.458-3.959-2.11-3.562.872,4.053,3.986,7.338,2.1,4.718-6.494,3.473-8.583-5.142-1.192-5.5,1.184,1.523,4.651,7.445,6.1,32.577,2.224,40.039,0,9-6.09,7.3-8.4-5.572-1.444-6.449,0a3.54,3.54,0,0,0,2.295,4.913c2.513.834,6.38-1.022,8.5-3.342s3.5-8,.433-8.077-3.651,2.942-3.056,5.016,5.071,7.6,9.757,7.329,3.919-6.011-.823-5.838-7.191,4.664-7.737,6.664-.344,5.7.877,6.887,5.09,1.085,5.888-1.721-3.277-6.958-11.026-3.43"
-                                transform="translate(-11687.58 -3523.83)" fill="none" stroke="#000"
-                                stroke-width="0.7" />
-                        </svg>
-                        <div class="description">
-                            <p>video games</p>
-                        </div>
-                        <a href="/project/games.html"></a>
-                    </div>
-
-                    <div class="frame">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100.4" height="59.16" viewBox="0 0 100.4 59.16">
-                            <g transform="translate(0.349 0.385)">
-                                <path
-                                    d="M12106.65,3083.986s1.254,12.792,1.42,19.95,1.343,32.947,4.225,34.355,11.773-1.128,22.516-1.31,33.558-.133,47.3,0a202.768,202.768,0,0,0,24.544-1.228"
-                                    transform="translate(-12106.65 -3080.2)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12136.7,3189.739s-2.62-9.323-3.933-16.447a103.872,103.872,0,0,1-1.566-11.61l25.276-5.816s-2.42,24.218-1.826,33.872"
-                                    transform="translate(-12124.076 -3131.223)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12254.748,3127.5s-2.056-12.755-2.774-23.291-1.489-22.924,2.035-27.42,19.144-5.854,19.144-5.854l-4.348,55.218"
-                                    transform="translate(-12209.373 -3070.938)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                                <path
-                                    d="M12357.941,3195.713s-.895-27.15.889-28,9.7-.666,13.422-.666,9.023.041,9,.9-2.248,9.57-3.211,15.3-1.486,12.463-1.486,12.463"
-                                    transform="translate(-12284.867 -3139.149)" fill="none" stroke="#000"
-                                    stroke-width="0.7" />
-                            </g>
-                        </svg>
-                        <div class="description">
-                            <p>data visualization</p>
-                        </div>
-                        <a href="/project/datavis.html"></a>
-                    </div>
-                </div>
-
-                <div class="getintouch">
-                    <p>
-                        You can view more of my work on my personal <a target="_blank"
-                            href="https://github.com/kemdi-dev/">GitHub</a> and I’m also reachable on <a target="_blank"
-                            href="https://www.linkedin.com/in/kemdi-ikejiani/">LinkedIn</a>
-                    </p>
-                    <p>
-                        You can contact me at <span>kemdi.ik[at]gmail[dot]com</span>
-                    </p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div class="scrollbar">
-        <div onclick="currentSlide(1)" class="dot">
-            <div id="myBtn" onclick="topFunction()" href="#"><span>home </span><span class="bar"></span></div>
         </div>
-        <div onclick="currentSlide(2)" class="dot">
-            <a href="#projects"><span>projects </span><span class="bar"></span></a>
-        </div>
-        <div onclick="currentSlide(3)" class="dot">
-            <a href="#contact"><span>contact </span><span class="bar"></span></a>
-        </div>
-    </div>
+    </section>
 
-    <footer class="child">
+
+    <section id="projects">
+        <div class="project-bkg">
+            <div>
+                <div class="project-bkgimg"></div>
+            </div>
+        </div>
+
         <div class="container">
 
-            <a target="_blank" href="https://github.com/kemdi-dev/">GITHUB</a>
-            <a target="_blank" href="https://www.linkedin.com/in/kemdi-ikejiani/">LINKEDIN</a>
-            <p>Copyright © 2023 Kemdi Ani. All rights reserved.</p>
+            <div class="project visible">
+                <h2>Wealthbar -> CI Direct Investing</h2>
+
+                <div class="l-col">
+
+                    <p class="subtitle">
+                        Solo designer - Design / UX research / design overhaul / new experience
+                    </p>
+
+                    <p>
+                        Wealthbar’s transition to CI Direct Investing required a complete overhaul from top to bottom,
+                        including coding rewrites, design language, and branding colours.
+                    </p>
+                    <div class="button">
+                        <a href="https://createdbykemdi.com/project/cidi.html">VIEW PROJECT SUMMARY</a>
+                    </div>
+                </div>
+                <div class="r-col">
+                    <div class="project-carousel">
+
+                        <img class="active" src="https://createdbykemdi.com/project/img/cidi-dashboard.jpg"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/cidi-onboarding-flowchart.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/cidi-0.jpg" alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/cidi-onboarding-1.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/cidi-icons.png" alt="screenshot of insomnia">
+
+                        <div class="carousel-arrows">
+                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <h2>CI Prestige Tool</h2>
+
+                <div class="l-col">
+
+                    <p class="subtitle">
+                        Lead designer - UX research / Design / Mobile responsiveness / Front-end development
+                    </p>
+
+                    <p>
+                        I was tasked with bringing an internal app to the modern age. It had been several years since
+                        the last update. It was an exhaustive project with hand-in-hand collaboration with the dev and
+                        QA teams. I was the lead UI/UX designer on the project.
+                    </p>
+                    <div class="button">
+                        <a href="https://createdbykemdi.com/project/ciprestige.html">VIEW PROJECT SUMMARY</a>
+                    </div>
+                </div>
+
+                <div class="r-col">
+                    <div class="project-carousel">
+
+                        <img class="active" src="https://createdbykemdi.com/project/img/prestige-0.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/prestige-flowchart.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/prestige-selection.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/prestige-selection-made.png"
+                            alt="screenshot of insomnia">
+                        <img src="https://createdbykemdi.com/project/img/prestige-form-0.png"
+                            alt="screenshot of insomnia">
+
+                        <div class="carousel-arrows">
+                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <h2>Mitto</h2>
+
+                <div class="l-col">
+
+                    <p class="subtitle">
+                        Solo designer/developer - Design / New experience / Mobile responsiveness / Front-end
+                        development
+                    </p>
+
+                    <p>
+                        I was tasked with designing and enhancing the experience of multiple pages on the Motto site.
+                        Pages were supposed to attract a more youthful audience; a fun environment. </p>
+                    <div class="button">
+                        <a href="https://createdbykemdi.com/project/mitto.html">VIEW PROJECT SUMMARY</a>
+                    </div>
+                </div>
+                <div class="r-col">
+                    <div class="project-carousel">
+
+                        <img src="https://createdbykemdi.com/project/img/mitto-example-2.jpg" alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/mitto-0.png" alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/mitto-mobile1.png" alt="screenshot of Wake">
+
+                        <div class="carousel-arrows">
+                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <h2>Booktopia</h2>
+
+                <div class="l-col">
+
+                    <p class="subtitle">
+                        Solo designer/developer - UI Design / Graphic Design / Research / Illustration
+                    </p>
+
+                    <p>
+                        I was tasked with designing and enhancing the experience of multiple pages on the Motto site.
+                        Pages were supposed to attract a more youthful audience; a fun environment. </p>
+                    <div class="button">
+                        <a href="https://createdbykemdi.com/project/booktopia.html">VIEW PROJECT SUMMARY</a>
+                    </div>
+                </div>
+                <div class="r-col">
+                    <div class="project-carousel">
+
+                        <img src="https://createdbykemdi.com/project/img/booktopia-web.png" alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/booktopia-wireframe.png"
+                            alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/booktopia-0.png" alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/booktopia-app-2.jpg" alt="screenshot of Wake">
+                        <img src="https://createdbykemdi.com/project/img/booktopia-app-3.jpg" alt="screenshot of Wake">
+
+                        <div class="carousel-arrows">
+                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project">
+                <h2>Illustrations</h2>
+
+                <div class="l-col">
+
+                    <p class="subtitle">
+                        Adobe Illustrator / Photoshop / Procreate
+                    </p>
+
+                    <p>
+                        I draw sometimes :)
+                    </p>
+                    <div class="button">
+                        <a href="https://createdbykemdi.com/project/illustrations.html">VIEW illustrations</a>
+                    </div>
+                </div>
+                <div class="r-col">
+                    <div class="project-carousel">
+
+                        <img class="active" src="https://createdbykemdi.com/img/normal-people.jpg"
+                            alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/peaches.jpg" alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/couple.jpg" alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/boat.jpg" alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/glasses.png" alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/portrait.png" alt="screenshot of Blight Souls">
+                        <img src="https://createdbykemdi.com/img/product-mockup.jpg" alt="screenshot of Blight Souls">
+
+                        <div class="carousel-arrows">
+                            <button class="arrow-l" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="arrow-r" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
-    </footer>
+    </section>
+
+
+    <section id="about">
+        <div class="container">
+            <h2>Education</h2>
+            <h3>York University - Toronto, Canada</h3>
+            <p>
+                Digital Media (Computational Arts, BA Honours)
+            </p>
+            <p class="subtitle">
+                Relevant Courses
+            </p>
+            <p>
+                Human-computer interaction, User Interface, Data visualization, Design theory, Web development, Object
+                Oriented Programming-Java, Data Structures
+            </p>
+
+            <h2>Contact</h2>
+            <h3>kemdi.ik[at]gmail[dot]com</h3>
+            <p>
+                <a href="https://github.com/kemdi-dev/" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+    </section>
+
+
+    <div class="scrollbar">
+        <div onclick="currentDot(1)" class="dot active">
+            <a href="#"></a>
+        </div>
+        <div onclick="currentDot(2)" class="dot">
+            <a href="#projects"></a>
+        </div>
+        <div onclick="currentDot(3)" class="dot">
+            <a href="#about"></a>
+        </div>
+    </div>
+
+
+    <!--ignore, fixes overscroll issue-->
+    <div style="scroll-snap-align:none;height: 2px;min-height: 0;"> </div>
+    <!--ignore-->
+
 
     <script src="/js/script.js"></script>
 
     <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        //nav sidebar indicators
+        let dotIndex = 1;
+        showDots(dotIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
+        function plusDots(n) {
+            showDots(dotIndex += n);
         }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
+        function currentDot(n) {
+            showDots(dotIndex = n);
         }
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("section");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
+        function showDots(n) {
+            let k;
+            let slides = document.querySelectorAll("section > .container");
+            let navdots = document.getElementsByClassName("dot");
+            if (n > slides.length) { dotIndex = 1 }
+            if (n < 1) { dotIndex = slides.length }
+            for (k = 0; k < navdots.length; k++) {
+                navdots[k].className = navdots[k].className.replace(" active", "");
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            dots[slideIndex - 1].className += " active";
+            navdots[dotIndex - 1].className += " active";
         }
     </script>
+
 </body>
 
 </html>
