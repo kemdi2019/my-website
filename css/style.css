@@ -561,7 +561,7 @@ video {
 
 @media screen and (max-width: 640px) {
   .hero-view {
-    scroll-behavior: none;
+    scroll-behavior: unset;
   }
   h1 {
     font-size: 3em;
