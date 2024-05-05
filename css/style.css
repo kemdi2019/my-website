@@ -563,6 +563,12 @@ video {
   .hero-view {
     scroll-behavior: unset;
   }
+  html.scroll-snap {
+    scroll-snap-type: none;
+  }
+  .scroll-snap section {
+    scroll-snap-align: unset;
+  }
   h1 {
     font-size: 3em;
   }
