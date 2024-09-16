@@ -193,6 +193,12 @@ h2 {
 }
 
 @media screen and (max-width: 1100px) {
+  #casestudy {
+    overflow-x: scroll;
+  }
+  #casestudy p {
+    word-break: break-all;
+  }
   #casestudy .images.flex {
     -ms-flex-pack: distribute;
         justify-content: space-around;
