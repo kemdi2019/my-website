@@ -8,178 +8,153 @@
     <title>Nik (Kemdi) . Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
-<body>
-    <nav>
-        <div class="left">
-            <p onclick="topFunction()" id="mybtn">NIK IKEJIANI</p>
-        </div>
-        <div class="right">
-            <a href="#gallery">PROJECTS</a>
-            <a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LINKEDIN</a>
-            <a href="https://github.com/nikxkj/" target="_blank">GITHUB</a>
-        </div>
+<body class="intro y mandatory-scroll-snapping">
+    <nav class="container">
+        <ul>
+            <li onclick="topFunction()" id="mybtn">HOME</li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LINKEDIN</a></li>
+        </ul>
     </nav>
 
+    <p class="bkgtext">design<br>
+        design<br>
+        design
+    </p>
+
     <section id="main">
-        <div class="container flex">
 
-            <div class="left">
-                <div class="intro">
-                    <h1>hi i’m <u>nik</u> (kemdi).</h1>
-                    <p>it’s nice to meet you!</p>
-                </div>
-                <p>
-                    i’m a multidisciplinary artist with a strong focus on ui/ux design - based in toronto, canada.
-                    currently a designer @ ci financial
-                </p>
-                <p class="button">
-                    <a href="#webdes">WEB/APP DESIGN</a> <br>
-                    <a href="#illustrations">ILLUSTRATIONS</a>
-                </p>
-                <div class="quote">
-                    <p>
-                        “Good design is actually a lot harder to notice than poor design, in part because good designs
-                        fit our needs so well that the design is invisible”
-                    </p>
-                    <p>
-                        — Don Norman
-                    </p>
-                </div>
-            </div>
+        <div class="container">
 
-            <div class="right">
-                <div class="graphic">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="707.793" height="734.016"
-                        viewBox="0 0 707.793 734.016">
-                        <g id="Group_5" data-name="Group 5" transform="translate(-991.666 -172.239)">
-                            <g id="Group_2" data-name="Group 2" transform="translate(797.162 -1582.655)">
-                                <path vector-effect="non-scaling-stroke" id="glasses"
-                                    d="M7388.39,411.379c28.7,1.407,55.737,4.58,70.174,9.437s17.328,12.8,28.526,13.129,15.477-9.214,38.837-13.129,84.959-4,93.273,0,10.508,20.839,9.663,35.518-3.681,26.323-8.628,32.209-37.356,6.882-54.117,6.415-39.68-.314-50.042-7.713-18.937-35.909-28.986-36.345-17.147,27.329-26.158,33.038-33.756,8.55-60.6,8.028-44.437-4.886-49.136-9.236-8.646-21.738-9.891-38.442-2.578-24.967,1.93-29.411S7359.691,409.972,7388.39,411.379Z"
-                                    transform="translate(-7091.162 1627.499)" fill="#72acd6" stroke="#72acd6"
-                                    stroke-width="1" />
-                                <path vector-effect="non-scaling-stroke" id="Path_1" data-name="Path 1"
-                                    d="M901.838,2448.4l-99.283-228.416a117.2,117.2,0,0,0-11.332-34.264c-8.818-16.535-23.052-32.844-28.808-56.113s-8.274-53.288-14.721-76.133c-1.76-6.237-10.937-23.172-10.937-23.172s-6.664-30.5-16.1-43.3-21.632-7.894-30.2-2.611c0,0-1.135-11.643-6.664-16.044-5.313-4.229-10.9-5.458-23.805-6.157s-27.8,3.362-27.8,3.362-18.266,5.156-27.509,7.049-24.266,2.491-30.834,7.457-15.38,21.01-15.38,21.01a50.98,50.98,0,0,0-6.99,9.424,96.894,96.894,0,0,0-5.881,12.975l5.061,2.757s-16.483.705-22.725,2.021-11.493,2.7-11.493,2.7-1.742-43.527-11.929-73.42-19.912-37.449-19.912-37.449,12.326,30.56,19.912,58.533a362,362,0,0,1,10.034,53.105l-6.117,1.887s-1.464-11.455-3.917-14.943-7.586-11.012-24.266-10.41c-13.791.5-30.947,10.562-40.608,8.714-5.831-1.115-4.66-14.234,0-17.406s17.548-5.449,38.313-4.062c15.842,1.058,24.407,12.132,24.093,10.858-3.907-15.863-4.024-26.415-13.375-54.435-9.146-27.4-39.712-76.781-89.056-77.9-.815-.019-.494-18.153-1.617-18.128-.715.016-.336,18.095-1.227,18.128-49.372,1.808-72.15,28.378-83.3,46.054-11.308,17.927-16.421,51.351-24.349,81.562-.2.775,11.586-12.446,26.851-13.575,16.341-1.208,43.408,6.612,46.016,10.441s-.515,15.968-6.273,15.346-20.54-16.336-39.743-15.346c-15.361.792-29.34,12.685-29.49,13.265-2.789,16.725-6.886,27.11-6.886,27.11l24.58-.045a22.75,22.75,0,0,1,2.784-5.49c1.877-2.657,6.018-5.032,6.018-5.032a28.018,28.018,0,0,0-5.219,4.111,19.14,19.14,0,0,0-3.582,5.955l-3.546-5.388s5.716-13.6,26.452-11.789,38.262,24.009,38.262,24.009-15.467-12.317-20.536-14.621a49.287,49.287,0,0,0-10.029-3.234s3.915,4,3.915,8.415-1.89,5.4-1.89,5.4,25.877,5.15,34.2,8.848,14.611,11.453,24.732,11.32,16.759-7.183,29.561-11.32c4.814-1.555,13.39-19.349,34.828-22.919a39.271,39.271,0,0,1,34.228,10.465,11.977,11.977,0,0,1-2.957,4.436,15.219,15.219,0,0,1-5.1,2.637s-4.78-7.635-10.842-11.058-13.407-2.637-13.407-2.637a16.556,16.556,0,0,1,2.395,6.621,22.949,22.949,0,0,1-.9,7.738l40.116-.665s10.733,5.541,18.3,5.689,15.8.985,15.8.985.544,19.373-.1,32.685-4.018,20.332-2.475,20.562c.655.1,4.314,3.765,5.033,0,2.489-13.029,1.873-51.211,1.873-51.211a141.368,141.368,0,0,0,14.544,2.722,147.573,147.573,0,0,0,14.955.995,100.836,100.836,0,0,0,13.613,8.871,94.122,94.122,0,0,0,14.739,6s20.308,15.489,20.2,29.5-10.667,25.075-10.667,25.075-21.28-7.368-41.7-11.96c-17.642-3.967-34.656-5.373-35.522-3.4-1.191,2.72-2.667,4.852-4.3,5.735-4.934,2.668-25.447,5.507-25.447,5.507s-1.919,4.05,3.427,8.468a20.888,20.888,0,0,0,8.775,3.907c3.744.9-8.775,58.3-8.775,58.3l14.336,7.01s5.089-21.332,7.685-20.062,2.7,25.139,2.7,25.139-9.668,250.255,1.6,252.687,6.781-248.588,6.781-248.588-1.013-68.708,0-68.329a377.992,377.992,0,0,1,42.729,19.66c21.371,11.491,44.506,25.726,61.118,33.24s46.518,12.005,61.053,34.778,27.866,44.344,46.013,93.53,27.865,102.373,27.865,102.373-38.709-40.354-41.8-44.249.405-21.288-3.7-35.088-52.082-57.1-52.082-57.1-38.057-36.165-63.674-48.761-73.3-26.578-73.3-26.578v83.507s12.222,178.952-15.3,182.272-27.865-141.58-27.865-141.58l-2.651-42.5s-18.486,36.067-35.323,78.2-35.478,98.767-39.271,97.726,14.276-63.515,36.272-113.438,34.856-71.37,40.974-97.5,5.844-59.086,5.844-59.086l-14.505-7.266-20.684,26.867s4.819,33.707-8.63,62.895-52.436,94.661-80.215,94.332c-14.889-.177-47.537-8.5-65.032-55.687-15.082-40.676-16.217-121.141-16.217-121.141s-2.039,52.964,3.981,94.1c7.891,53.912,28.393,81.709,26.048,99.585-4.122,31.417-28.33,96.366-69.169,94.339s-55.665-134.939-55.665-134.939-11.932-53.763-10.734-75.364,7.669-27.453,10.734-45.973-6.123-47.131,1.75-60.96,24.854-18.364,34.231-26.479,23.469-28.616,23.469-28.616L279.6,2122.4s1.39,36.819,25.016,70.678,51.424,60.831,91.122,62.643,82.2-47.609,95.673-68.529,19.521-49.861,19.521-49.861-9.672-3.946-11.234-6.463-2.277-8.468-2.277-8.468-61.025,2.376-72.48-7.409-18.578-36.4-29.2-36.448S380.69,2100.8,371,2109.848s-39.843,10.352-60.648,9.613-43.653-2-50.817-9.83-9.215-38.957-9.215-38.957-2.09-24.2,1.628-28.044,17.725-3.75,17.725-3.75a120.219,120.219,0,0,0,7.26-23.455c3.078-14.567,5.065-34.744,9.545-50.506,8.734-30.725,18.13-48.94,18.13-48.94s-18.019,23.956-22.053,43.871-3.8,43.589-3.8,43.589l-7.093,29.551s-14.123-76.356,1.67-117.012,75.985-68.558,122.4-69.373,111.458,30.434,128.085,72.127S537.646,2021.2,537.646,2021.2"
-                                    fill="none" stroke="#fff" stroke-width="1" />
-                                <path vector-effect="non-scaling-stroke" id="Path_2" data-name="Path 2"
-                                    d="M252.358,2214.247s-29.625,10.321-33.471,21,2.622,32.419-1.55,55.263-12.624,47.341-10.986,62.34a180.509,180.509,0,0,0,6.614,30.545s9.873-52.192,10.941-77.609-2.4-56.641,6.46-64.838S252.358,2214.247,252.358,2214.247Z"
-                                    transform="translate(-1.794 -59.24)" fill="none" stroke="#fff" stroke-width="1" />
-                                <path vector-effect="non-scaling-stroke" id="Path_3" data-name="Path 3"
-                                    d="M370.972,2238.591s27.2-18.311,35.658-18.022,14.374,6.768,17.138,7.112,5.959-7.238,15.819-7.112,38.244,16.448,38.244,16.448-16.282,24-31,30.156-34.4,4.8-44.553,0S370.972,2238.591,370.972,2238.591Z"
-                                    transform="translate(-28.353 -60.258)" fill="none" stroke="#fff" stroke-width="1" />
-                                <path vector-effect="non-scaling-stroke" id="Path_4" data-name="Path 4"
-                                    d="M638.39,2055.836s10.074-8.022,13.414-11.152,9.1-8.418,9.1-8.418a23.685,23.685,0,0,0,8.92,0c4.53-.967,6.988-1.3,6.988-1.3s19.446,30.778,16.824,34.317-18.8-4.439-23.812-7.505-10.223-5.818-15-5.937S638.39,2055.836,638.39,2055.836Z"
-                                    transform="translate(-71.442 -30.352)" fill="none" stroke="#fff" stroke-width="1" />
-                            </g>
-                            <g id="DESIGNER" transform="translate(0 44.844)">
-                                <path vector-effect="non-scaling-stroke" id="Path_9" data-name="Path 9"
-                                    d="M7359.291,163.627l29.171,81.634-26.8-80.4s2.743-18.04,12.266-16.891,23.813,39.143,21.749,60.039-7.216,32.512-7.216,32.512"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_10" data-name="Path 10"
-                                    d="M7432.833,136.8l8.417,82.21s6.639,3.893,24.087-9.67" transform="translate(-6294)"
-                                    fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_11" data-name="Path 11"
-                                    d="M7463.607,132.441l-27.516,4.181" transform="translate(-6294)" fill="none"
-                                    stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_12" data-name="Path 12"
-                                    d="M7441.239,173.676a38.086,38.086,0,0,0,20.038-4.46" transform="translate(-6294)"
-                                    fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_13" data-name="Path 13"
-                                    d="M7538.546,132.441a7.024,7.024,0,0,0-7.357-2.85c-4.878,1.076-22.784,10.515-21.9,26.145s20.053,24.312,19.252,39.493-17.385,17.612-22.807,16.427-9.79-4.922-11.057-14.233"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_14" data-name="Path 14"
-                                    d="M7595.631,142.532l-30.221,80.782" transform="translate(-6294)" fill="none"
-                                    stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_15" data-name="Path 15"
-                                    d="M7676.039,204.121s7.066-10.431,2.738-16.861-35.485-4.131-58.058,14.788-29.818,39.026-23.055,47.051,22.986,3.119,30.432-1.175,13.721-12.358,13.721-12.358l-5.807-8.026"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_16" data-name="Path 16"
-                                    d="M7631.188,285.2l73.068-30.506L7639.7,321.2l91.677-33.149"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_17" data-name="Path 17"
-                                    d="M7921.673,383.111l-6.008-25.248s-33.425,7.063-43.806,8.869-41.513,7.147-41.513,7.147-.38,6.169,4.682,13.334a43.43,43.43,0,0,0,9.835,10.38"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_18" data-name="Path 18"
-                                    d="M7872.451,367.162s.762,8.819,2.543,13.994a45.313,45.313,0,0,0,4.593,9.361"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                                <path vector-effect="non-scaling-stroke" id="Path_19" data-name="Path 19"
-                                    d="M7934.835,430.677s-19.855,2.285-31.335,4.24-23.626,4.607-32.052,6.089-22.375,2.95-22.375,2.95,24.509-2.067,47.225-6.064,35.74-4.889,38.539-4.145,13.36,9.078,6,15.726-30.9,3.389-35.179,2.188-17.626-9.573-17.626-9.573,7.149,4.139,5.814,10.259-26.1,22.947-37.248,26.852"
-                                    transform="translate(-6294)" fill="none" stroke="#fff" stroke-width="4" />
-                            </g>
-                        </g>
-                    </svg>
+            <p>
+                I’m a multidisciplinary artist with a strong focus on UI/UX design - based in Toronto, Canada.
+            </p>
+            <h1><span>Nik </span> <span>Ikejiani</span></h1>
+            <p>
+                Currently a designer @ CI Financial
+            </p>
 
-                </div>
-            </div>
         </div>
+
     </section>
 
-    <section id="gallery">
-        <div class="container flex">
-            <div class="left"></div>
-            <div class="right">
+    <section id="projects">
 
-                <div class="project" id="webdes">
-                    <div class="image visible">
-                        <img src="img/ci-fund-commentary-full.png" alt="">
-                        <div class="title">
-                            <h2>CI GAM Fund Commentary</h2>
-                            <p class="button"><a href="project/fund-commentary.html">VIEW CASE STUDY</a></p>
+        <div class="navbkg"></div>
+
+        <div class="container">
+
+            <div class="project">
+                <div class="first image visible">
+                    <div class="left">
+                        <img src="img/img-home-ci-gam.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>CI GAM Fund Commentary</h2>
+                        <p>
+                            Modernizing the fund commentary page for GAM. In addition to redesigning the page and making
+                            it appear more modern, I also designed the accompanying AEM component.
+                        </p>
+                        <div class="btn">
+                            <a href="project/gam-fund-commentary.html">VIEW CASE STUDY</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="project">
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/cidi-dashboard.jpg" alt="">
-                        <div class="title">
-                            <h2>Wealthbar to CI Direct Investing Rebrand</h2>
-                            <p class="button"><a href="project/cidi.html">VIEW CASE STUDY</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/mitto-example-2.jpg" alt="">
-                        <div class="title">
-                            <h2>Mitto</h2>
-                            <p class="button"><a href="project/mitto.html">VIEW CASE STUDY</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="image">
-                        <img src="https://nikxkj.github.io/home/project/img/booktopia-web.png" alt="">
-                        <div class="title">
-                            <h2>Booktopia (Self Project)</h2>
-                            <p class="button"><a href="project/booktopia.html">VIEW CASE STUDY</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project" id="illustrations">
-                    <div class="image">
-                        <img src="img/illustrations-full.png" alt="">
-                        <div class="title">
-                            <h2>ILLUSTRATIONS</h2>
-                            <p class="button"><a href="project/illustrations.html">VIEW ILLUSTRATIONS</a></p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
+            <div class="project">
+                <div class="image">
+                    <div class="left">
+                        <img src="img/img-home-cidi.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>CI Direct Investing Rebrand</h2>
+                        <p>
+                            Wealthbar’s integration into CI included the integration of CI Direct Investment (prev.
+                            wealthbar) with CI Direct Trading (prev. virtual brokers). Creating a dashboard that
+                            showcased this integration was a highly important stakeholder request. As a designer on the
+                            project, I was in several stakeholder meetings where we discussed what we were going for and
+                            the aim of the overall experience.
+                        </p>
+                        <div class="btn">
+                            <a href="project/cidi-rebrand.html">VIEW CASE STUDY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="image">
+                    <div class="left">
+                        <img src="img/img-home-mitto.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Mitto</h2>
+                        <p>
+                            I was tasked with designing and enhancing the experience of multiple pages on the Mitto
+                            site.
+                        </p>
+                        <div class="btn">
+                            <a href="project/mitto.html">VIEW CASE STUDY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="image">
+                    <div class="left">
+                        <img src="img/img-home-booktopia.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Booktopia (Personal Project)</h2>
+                        <p>
+                            Booktopia is an app that helps people easily find and save books. Inspired by justwatch.com
+                            where you can find where to stream or buy tv shows and movies. The colour theme was
+                            monochromatic, welcoming and vibrant.
+                        </p>
+                        <div class="btn"><a href="project/booktopia.html">VIEW CASE STUDY</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="image">
+                    <div class="left">
+                        <img src="img/img-home-illustration.jpg" alt="">
+                    </div>
+                    <div class="right">
+                        <h2>Illustrations</h2>
+                        <p>I draw sometimes :)</p>
+                        <div class="btn"><a href="project/illustrations.html">VIEW ILLUSTRATIONS</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="homeheight"></div>
+
+
         </div>
     </section>
 
     <script src="js/script.js"></script>
+
+    <script>//adds active class to fix the lack of gallery-view
+        document.querySelectorAll("#projects .container")[0].addEventListener("mouseover", function (e) {
+            const parent = e.target.parentElement;
+            document.getElementsByTagName("html")[0].classList.add("active");
+        });
+
+        document.getElementById("main").addEventListener("mouseout", function (e) {
+            document.getElementsByTagName("html")[0].classList.remove("active");
+        });
+    </script>
 
 </body>
 
