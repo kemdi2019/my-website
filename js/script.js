@@ -11,35 +11,31 @@ function topFunction() {
 
   var htmlsec = document.getElementsByTagName("html")[0];
   var section = document.querySelectorAll("section");
-  var main = document.querySelector("#main .right");
-  var gallery = document.getElementById("gallery");
-  var webdesid = document.getElementById("webdes");
-  var illustrationid = document.getElementById("illustration");
-  var projects = document.getElementsByClassName("image");
+  var projectswrapper = document.querySelector("#projects .container");
+  var projects = document.getElementsByClassName("project");
   var galleryview = document.getElementsByClassName("gallery-view");
-  var nographic = document.getElementsByClassName("nographic")[0];
+  var imgwrapper1 = document.querySelectorAll(".casestudy .card");
+  var imgwrapper2 = document.querySelectorAll(".casestudy .final");
 
   function onScroll() {
     var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 
     var visible = document.getElementsByClassName("visible");
-    /*
-                        for (var i = 0; i < projects.length; i++) {
-                            if (elementInViewport(projects[i])) {
-                                htmlsec.classList.add("gallery-view");
-                                if (elementInViewport(main)) {
-                                    htmlsec.classList.remove("gallery-view");
-                                }
-                            }
-                        }*/
+
+    document.getElementsByTagName("body")[0].classList.remove("intro");
 
     for (var i = 0; i < projects.length; i++) {
-      if (visible[0]) {
+      if (elementInViewport(projectswrapper)) {
         htmlsec.classList.add("gallery-view");
       } else {
         htmlsec.classList.remove("gallery-view");
       }
+    }
+
+    for (var i = 0; i < imgwrapper1.length; i++) {
+      images = imgwrapper1[i];
+      images.classList.add("testing");
     }
   }
 
