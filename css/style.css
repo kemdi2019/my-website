@@ -403,8 +403,8 @@ nav ul li:nth-child(1) {
 
 html,
 body {
-  -webkit-animation: noscroll 1.5s;
-          animation: noscroll 1.5s;
+  -webkit-animation: noscroll 1.3s;
+          animation: noscroll 1.3s;
 }
 
 nav ul::after,
@@ -417,8 +417,8 @@ h1 span,
 nav li,
 #main p,
 #projects {
-  -webkit-animation: opacityanim 1.8s;
-          animation: opacityanim 1.8s;
+  -webkit-animation: opacityanim 1.3s;
+          animation: opacityanim 1.3s;
 }
 
 .gallery-view .bkgtext {
