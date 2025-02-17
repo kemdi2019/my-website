@@ -84,6 +84,14 @@ ul li {
   padding-top: 30px;
 }
 
+.casestudy img {
+  margin: 10px 0;
+}
+
+.casestudy .card img {
+  margin: 0;
+}
+
 .colours {
   padding-top: 5px;
 }
@@ -107,7 +115,7 @@ ul li {
 }
 
 .images .card {
-  margin: 20px 0;
+  margin: 15px 0;
   -ms-flex: 0 0 200px;
   -webkit-box-flex: 0;
           flex: 0 0 200px;
