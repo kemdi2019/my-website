@@ -1,242 +1,225 @@
-h4 {
-  text-decoration: underline;
-}
-
-nav,
-.container {
-  -webkit-animation: loadanim 0.5s ease-in;
-          animation: loadanim 0.5s ease-in;
-}
-
-#projtitle {
-  position: fixed;
-  top: 50px;
-  left: 0;
-  height: 400px;
-  background-color: #000;
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-#projtitle h1 {
-  text-transform: uppercase;
-}
-
-#projtitle .container {
-  padding: 50px 5%;
-}
-
-#projtitle p {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #72acd6;
-  font-size: 16px;
-}
-
-#projtitle .right {
-  height: 100%;
-  overflow: hidden;
-}
-
 h2 {
-  font-size: 16px;
-  letter-spacing: 1px;
+  margin: 20px 0;
 }
 
-#casestudy {
-  height: unset;
-  margin-top: 450px;
-  position: relative;
-  background-color: #222222;
-}
-
-#casestudy.illustrations img {
-  width: 100%;
-}
-
-#casestudy .container {
-  max-width: 990px;
+section .container {
+  padding-top: 0;
+  width: 830px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
-#casestudy .colours span {
-  margin: 20px 0;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  padding: 40px 0;
-  line-height: 20px;
-  background-color: #72acd6;
-  text-align: center;
-  margin-right: 10px;
-  text-shadow: 0 0 10px #222222;
-  /*top: 50%;
-            transform: translate(50%, -50%);*/
+.border .container {
+  padding-left: 9%;
+  padding-right: 9%;
 }
 
-#casestudy .images.flex {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+ul {
+  margin-left: 25px;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+#projtitle {
+  padding-top: 30px;
+}
+
+#projtitle .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0;
+  height: 200px;
+}
+
+#projtitle .left {
+  width: 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  border: 2px solid #000;
+}
+
+#projtitle .left img {
+  vertical-align: middle;
+}
+
+#projtitle .right {
+  height: 68%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  width: 100%;
+}
+
+#projtitle .right h1,
+#projtitle .right p {
+  padding-left: 20px;
+}
+
+#projtitle h1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#projtitle h1::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 105%;
+  background: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s width;
+  transition: 0.5s width;
+}
+
+.border {
+  border: 2px solid #000;
+  margin: 5% 8%;
+  padding-top: 30px;
+}
+
+.colours {
+  padding-top: 5px;
+}
+
+.colours span {
+  padding: 20px 5px 5px 5px;
+  margin: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.images {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#casestudy .images .card {
+.images .card {
   margin: 20px 0;
+  -ms-flex: 0 0 200px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 200px;
           flex: 0 0 200px;
   width: 200px;
   height: 200px;
   overflow: hidden;
   display: inline-block;
   cursor: pointer;
-  background-color: #fff;
-  -webkit-transition: 0.3s -webkit-box-flex;
-  transition: 0.3s -webkit-box-flex;
-  transition: 0.3s flex;
-  transition: 0.3s flex, 0.3s -webkit-box-flex, 0.3s -ms-flex;
-}
-
-#casestudy .images .card img {
-  -webkit-transition: 0.3s width, 0.3s max-width, 0.3s margin-left;
-  transition: 0.3s width, 0.3s max-width, 0.3s margin-left;
-}
-
-#casestudy .images .card:hover img {
-  width: 110%;
-  max-width: 110%;
-  margin-left: -5%;
-}
-
-#casestudy .images .card:active {
-  position: relative;
-  z-index: 10;
-  overflow: visible;
-}
-
-#casestudy .images .card:active img {
-  width: 400px;
-  max-width: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.473);
-}
-
-#casestudy .final {
-  height: 500px;
-  overflow: scroll;
-  margin-top: 10px;
-}
-
-#projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  background-color: #000;
-  height: unset;
-}
-
-#projects .slide {
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  text-align: center;
-}
-
-#projects .slide:nth-child(1) {
-  background-image: url(../../img/ci-fund-commentary-full.png);
-}
-
-#projects .slide:nth-child(2) {
-  background-image: url(https://nikxkj.github.io/home/project/img/cidi-dashboard.jpg);
-}
-
-#projects .slide:nth-child(3) {
-  background-image: url(https://nikxkj.github.io/home/project/img/mitto-example-2.jpg);
-}
-
-#projects .slide:nth-child(4) {
-  background-image: url(https://nikxkj.github.io/home/project/img/booktopia-web.png);
-}
-
-#projects .slide a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+  background: #fff;
+  border: 2px solid #000;
   opacity: 0;
-  -webkit-transition: 0.3s opacity;
-  transition: 0.3s opacity;
-  color: #fff;
-  padding: 10px;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: 1s opacity, 1s -webkit-transform;
+  transition: 1s opacity, 1s -webkit-transform;
+  transition: 1s opacity, 1s transform;
+  transition: 1s opacity, 1s transform, 1s -webkit-transform;
+  position: relative;
 }
 
-#projects .slide:hover a {
-  opacity: 0.9;
+.images .card.visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
-#projects .slide.active {
-  opacity: 0.2;
+.final img {
+  border: 2px solid #000;
+}
+
+#projtitle .left,
+#projtitle p {
+  -webkit-animation: opacityanim 1.8s;
+          animation: opacityanim 1.8s;
+}
+
+.border {
+  -webkit-animation: opacityanim 0.3s;
+          animation: opacityanim 0.3s;
+}
+
+.border .container {
+  -webkit-animation: opacityanim 1.8s;
+          animation: opacityanim 1.8s;
 }
 
 @media screen and (max-width: 1100px) {
-  #casestudy {
-    overflow-x: scroll;
+  .border {
+    margin: 5%;
   }
-  #casestudy p {
-    word-break: break-all;
+  .border .container {
+    padding-left: 5%;
+    padding-right: 5%;
   }
-  #casestudy .images.flex {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  #projtitle .left {
+    max-width: 100%;
   }
-  #casestudy .images .card {
-    margin-left: 10px;
-    margin-right: 10px;
+  #projtitle .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  #projtitle .right {
+    position: relative;
+    -ms-flex-item-align: unset;
+        -ms-grid-row-align: unset;
+        align-self: unset;
+    padding-left: 0;
+    padding-bottom: 15px;
+  }
+  #projtitle .right h1,
+  #projtitle .right p {
+    padding-left: 0;
+  }
+  #projtitle h1::after {
+    width: 100%;
+    left: 0;
+    right: unset;
+  }
+  .colours {
     text-align: center;
   }
-  #projects .slide {
-    height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .border .container,
+  #projtitle .left,
+  #projtitle p {
+    -webkit-animation: opacityanim 2s;
+            animation: opacityanim 2s;
   }
 }
 
-@media screen and (max-width: 600px) {
-  #casestudy .images .card {
-    margin: 10px 0;
+@media screen and (min-width: 1200px) {
+  section .container {
     width: 100%;
-    height: 300px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
   }
-  #projects {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  #projtitle .container,
+  .casestudy {
+    width: 830px;
+    margin: 0 auto;
+    max-width: 100%;
   }
-  #projects .slide {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-  }
-}
-
-@media screen and (min-width: 1550px) {
-  #casestudy .container {
-    padding-left: 10px;
-    padding-right: 10px;
+  #projtitle .container {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=project.css.map */
