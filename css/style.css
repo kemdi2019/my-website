@@ -600,8 +600,13 @@ nav li,
   nav {
     background-color: #fff;
   }
+  nav.container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
   p,
-  li {
+  li,
+  nav ul li {
     font-size: 15px;
   }
   h1,
