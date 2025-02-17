@@ -140,8 +140,8 @@ ul li {
 
 #projtitle .left,
 #projtitle p {
-  -webkit-animation: opacityanim 1.8s;
-          animation: opacityanim 1.8s;
+  -webkit-animation: opacityanim 1.3s;
+          animation: opacityanim 1.3s;
 }
 
 .border {
@@ -150,8 +150,8 @@ ul li {
 }
 
 .border .container {
-  -webkit-animation: opacityanim 1.8s;
-          animation: opacityanim 1.8s;
+  -webkit-animation: opacityanim 1.3s;
+          animation: opacityanim 1.3s;
 }
 
 @media screen and (max-width: 1100px) {
