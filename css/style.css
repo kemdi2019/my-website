@@ -420,10 +420,14 @@ nav ul li:nth-child(1) {
   }
 }
 
-html,
-body {
-  -webkit-animation: noscroll 1.3s;
-          animation: noscroll 1.3s;
+@media screen and (min-width: 1101px) {
+  html,
+  body {
+    -webkit-animation: noscroll 0.8s;
+            animation: noscroll 0.8s;
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
 }
 
 nav ul::after,
