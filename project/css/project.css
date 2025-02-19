@@ -90,6 +90,28 @@ ul li {
 
 .casestudy .card img {
   margin: 0;
+  -webkit-transition: 0.5s width;
+  transition: 0.5s width;
+}
+
+.casestudy .card:hover {
+  overflow: visible;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.casestudy .card:hover img {
+  max-width: unset;
+  width: 340px;
+  background-color: #fff;
 }
 
 .colours {
