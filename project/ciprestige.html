@@ -5,85 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kemdi Ani, Project Summary</title>
-    <meta content="Portfolio of UI/UX Designer and Developer, Kemdi Ani" name="description" />
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <title>Nik (Kemdi) . Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@100;400;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="css/project.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 
-<body id="summary">
-    <nav>
-        <div class="container">
+<body class="gallery-view">
+    <nav class="container">
+        <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../index.html#projects">PROJECTS</a></li>
+            <li><a href="https://www.linkedin.com/in/kemdi-ikejiani/" target="_blank">LINKEDIN</a></li>
+        </ul>
+    </nav>
+
+    <section id="projtitle">
+
+        <div class="navbkg"></div>
+
+        <div class="container flex">
             <div class="left">
-                <a href="/index.html"><span>Kemdi Ani</span><span class="mobile">Home</span> </a>
+                <img src="../img/img-home-ciprestige.jpg" alt="">
             </div>
             <div class="right">
-                <ul>
-                    <li><a href="/#projects">Projects</a></li>
-                    <li><a href="/#contact">Contact</a></li>
-                </ul>
-                <div class="mobile">
-                    <a target="_blank" href="https://github.com/kemdi-dev/">GITHUB</a>
-                    <a target="_blank" href="https://www.linkedin.com/in/kemdi-ikejiani/">LINKEDIN</a>
-                </div>
+                <h1><span>CI Prestige</span></h1>
+                <p>Case Study</p>
             </div>
         </div>
-    </nav>
-    <div class="burger mobile">
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
 
-    <section class="hero">
-        <div class="home mobile">
-            - <a href="/index.html">Back Home</a>
-        </div>
-        <div class="container">
-            <div class="thumbnail">
-                <img src="" alt="">
-            </div>
-            <p>Project Summary</p>
-            <h1>CI Prestige Tool</h1>
-        </div>
     </section>
 
-    <div class="spacing" id="spacing"></div>
-
-    <section class="description">
+    <section class="border">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3>intro</h3>
-                    <p>
-                        Unfortunately, I can’t share too much about this project since it’s an internal tool. I was
-                        tasked with bringing an internal app to the modern age. It had been several years since the last
-                        update. As you can probably tell, it was an exhaustive project with hand-in-hand collaboration
-                        with the dev and QA teams. I was the lead UI/UX designer on the project.
-                    </p>
-                    <img src="https://createdbykemdi.com/projects/img/prestige-0.png" alt="">
+
+            <div class="casestudy">
+                <h2>Intro</h2>
+                <p>
+                    Unfortunately, I can’t share too much about this project since it’s an internal tool. I was
+                    tasked with bringing an internal app to the modern age. It had been several years since the last
+                    update. As you can probably tell, it was an exhaustive project with hand-in-hand collaboration
+                    with the dev and QA teams. I was the lead UI/UX designer on the project.
+                </p>
+
+                <h2>Role</h2>
+                <p>
+                    Design <br>
+                    Research <br>
+                    Illustration
+                </p>
+
+                <div class="colours">
+                    <span>#CDC793</span>
+                    <span>#916D5D</span>
+                    <span>#C9A595</span>
                 </div>
-                <div class="col">
-                    <h3>Role</h3>
-                    <p>
-                        Design <br>
-                        Research <br>
-                        Illustration
-                    </p>
-                    <h3>Colours</h3>
-                    <ul class="colours">
-                        <li>#CDC793</li>
-                        <li>#916D5D</li>
-                        <li>#C9A595</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="">
-                <h3>Design Notes</h3>
+
+                <h2>Design Notes</h2>
                 <p>
                     Every page currently has a Save, Back, and Next button<br>
                     - Implement a “clear” button for the IP questionnaire. Users would expect a reset button to clear
@@ -92,98 +74,111 @@
                     user<br>
                     Mosaic: ESG or Non-ESG portfolio suggestions
                 </p>
+
+                <p><u>Investment Options</u></p>
                 <p>
-                    INVESTMENT OPTIONS<br>
                     After selecting “Guided Portfolio" or “Individual Investments", user has no way of knowing that the
                     next step is INVESTMENT SELECTION. There is a Next’ button that can’t be used until the user has
                     gone through the investment selection process.
                 </p>
+
+                <p><u>Suggestions</u></p>
                 <p>
-                    Suggestions<br>
                     - rename Next button to Investment Selection<br>
                     - highlight INVESTMENT SELECTION when next button is clicked
                 </p>
+
+                <p><u>MOSAIC/PS/PSS Selection</u></p>
                 <p>
-                    MOSAIC/PS/PSS SELECTION<br>
                     - Images or no images?<br>
                     - make selection obvious including on mobile<br>
                     - when a selection is made, reduce the opacity of non-selected options<br>
                     - include highlighted border on the selected option
                 </p>
+                <div class="images flex">
+                    <div class="card">
+                        <img src="img/prestige-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/prestige-selection.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/prestige-selection-made.png" alt="">
+                    </div>
+                </div>
+
+                <p><u>Questionnaire</u></p>
                 <p>
-                    QUESTIONNAIRE<br>
                     - Currently, the Back button would theoretically take the user one page back - the ps/pss mosaic
                     selection page. No need for the Reset button to do the same task since that would be redundant.<br>
                     - Rename the Reset button, should have the same current functionality - clearing radio checkboxes
                     Regarding ESG or Non-ESG for the Mosaic selection:<br>
                     - when SKIP QUESTIONNAIRE is selected, highlight a “ESG or Non-ESG" choice
                 </p>
+                <div class="images flex">
+                    <div class="card">
+                        <img src="img/prestige-form-0.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/prestige-form-1.png" alt="">
+                    </div>
+                </div>
+
+                <p><u>Selected/Suggested Portfolio</u></p>
                 <p>
-                    SELECTED/SUGGESTED PORTFOLIO<br>
                     - The only page with a Reset button<br>
                     - Reset button clears the choices and takes the user back to the ps/pss/mosaic selection<br>
                     - Hovering on the Reset button should tell the user what the button does
                 </p>
+                <div class="images flex">
+                    <div class="card">
+                        <img src="img/prestige-graph-old.png" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/ci prestige graph copy.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/prestige-iphone-mockup.png" alt="">
+                    </div>
+                </div>
 
-                <img src="https://createdbykemdi.com/projects/img/prestige-flowchart.png" alt="">
-            </div>
+                <img src="https://nikxkj.github.io/home/project/img/prestige-flowchart.png" alt="">
 
-            <div>
-                <h3>Process</h3>
+                <h2>Process</h2>
                 <p>
                     Due to the exhaustive nature of the project, I decided to have the dev environment on my local. This
                     meant that I could implement and experience the changes I wanted in real-time.
                 </p>
                 <p>
                     One of the major requests from stakeholders was a new selection screen to accomodate the new
-                    experience they were hoping to implement. Wireframes anf userflows are a very important part of the
+                    experience they were hoping to implement. Wireframes and userflows are a very important part of the
                     user experience design process. I went through a few itirations of this particular screen before
                     landing on something that I felt worked well on desktop and could easily translate to mobile
                     screens.
                 </p>
-                <img class="border" src="img/prestige-form-0.png" alt="">
-                <img src="https://createdbykemdi.com/projects/img/prestige-selection.png" alt="">
-                <img src="https://createdbykemdi.com/projects/img/prestige-selection-made.png" alt="">
+
+                <div class="final">
+                    <img src="https://nikxkj.github.io/home/project/img/prestige-selection-made.png" alt="">
+                    <img src="https://nikxkj.github.io/home/project/img/prestige-0.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="width: 100%;">
+            <div class="btn"><a href="../index.html">
+                    < Return to Home</a>
             </div>
         </div>
     </section>
 
-    <div id="myBtn" class="totop" onclick="topFunction()">^</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <footer class="">
-        <div class="container">
+    <script src="js/project.js"></script>
 
-            <div class="highlights">
-                <div class="container">
-                    <div class="image">
-                        <a href="/project/cidi.html">
-                            <img src="/project/img/cidi-0.jpg" alt="">
-                        </a>
-                        <div class="description">ci direct investing</div>
-                    </div>
-                    <div class="image">
-                        <a href="/project/ciprestige.html">
-                            <img src="/project/img/prestige-0.png" alt="">
-                        </a>
-                        <div class="description">ci prestige</div>
-                    </div>
-                    <div class="image">
-                        <a href="/project/mitto.html">
-                            <img src="/project/img/mitto-0.png" alt="">
-                        </a>
-                        <div class="description">mitto</div>
-                    </div>
-                </div>
-            </div>
-
-            <a target="_blank" href="https://github.com/kemdi-dev/">GITHUB</a>
-            <a target="_blank" href="https://www.linkedin.com/in/kemdi-ikejiani/">LINKEDIN</a>
-            <p>Copyright © 2023 Kemdi Ani. All rights reserved.</p>
-
-        </div>
-    </footer>
-
-    <script src="/js/script.js"></script>
 </body>
 
 </html>
