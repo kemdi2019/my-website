@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 0.8;
@@ -22,12 +22,12 @@ h1 {
 
 h2 {
   line-height: 0.8;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 p,
 li {
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 1.6;
   margin: 16px 0;
 }
@@ -90,13 +90,19 @@ nav ul li {
   display: inline-block;
   font-weight: 700;
   margin: 0 10px;
+  padding-left: 0;
   -webkit-transition: 0.5s -webkit-transform;
   transition: 0.5s -webkit-transform;
   transition: 0.5s transform;
   transition: 0.5s transform, 0.5s -webkit-transform;
   cursor: pointer;
   line-height: 0.8;
-  font-size: 17px;
+  font-size: 1rem;
+}
+
+nav ul li:hover {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 nav ul li:nth-child(1) {
@@ -105,7 +111,7 @@ nav ul li:nth-child(1) {
 }
 
 .bkgtext {
-  font-size: 16em;
+  font-size: 16rem;
   font-weight: 800;
   right: 0;
   position: fixed;
@@ -191,8 +197,6 @@ nav ul li:nth-child(1) {
   transition: 0.5s -webkit-transform;
   transition: 0.5s transform;
   transition: 0.5s transform, 0.5s -webkit-transform;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
   /*&:first-child::after {
         content: "";
         display: inline-block;
@@ -213,15 +217,16 @@ nav ul li:nth-child(1) {
 
 #main p {
   margin-left: 80px;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .btn a {
   border: 2px solid #000;
   padding: 20px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-weight: 700;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -322,13 +327,14 @@ nav ul li:nth-child(1) {
           transform: translateY(0);
 }
 
+.gallery-view nav ul li:hover {
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
 .gallery-view nav ul li:nth-child(2) {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-}
-
-.gallery-view #projects {
-  background-color: #fff;
 }
 
 .gallery-view #projects .right {
@@ -446,10 +452,8 @@ nav li,
 
 .gallery-view .bkgtext {
   opacity: 0;
-}
-
-.gallery-view #main h1::after {
-  width: 0%;
+  -webkit-transition: 1s right, 1.5s opacity;
+  transition: 1s right, 1.5s opacity;
 }
 
 .gallery-view #main h1 span:last-child {
@@ -462,6 +466,9 @@ nav li,
 }
 
 @media screen and (max-width: 1100px) {
+  .bkgtext {
+    font-size: 12rem;
+  }
   .container {
     padding: 40px 5%;
   }
@@ -561,12 +568,17 @@ nav li,
   }
   .active .bkgtext {
     opacity: 0;
+    line-height: 0;
   }
   nav {
     text-align: center;
   }
   #main .container {
     width: 100%;
+  }
+  .gallery-view #projects,
+  .active #projects {
+    background-color: #fff;
   }
   #projects .container {
     height: 100%;
@@ -583,7 +595,7 @@ nav li,
   }
   #projects .right {
     width: 90%;
-    margin: 0 5%;
+    right: 5%;
     bottom: 0;
     padding: 20px 1%;
   }
@@ -605,27 +617,30 @@ nav li,
     background-color: #fff;
   }
   nav.container {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 40px;
-  }
-  p,
-  li,
-  nav ul li {
-    font-size: 15px;
   }
   h1,
   h2 {
-    font-size: 1.4em;
+    font-size: 1.5rem;
   }
   .bkgtext {
     display: none;
   }
   #main h1 {
-    font-size: 1.9em;
+    font-size: 2rem;
     width: 100%;
   }
+  .gallery-view #main h1 span:last-child,
+  .active #main h1 span:last-child {
+    -webkit-transform: translateY(90%);
+            transform: translateY(90%);
+  }
   #main p {
-    font-size: 1.3em;
+    font-size: 1.3rem;
+  }
+  #projects .container {
+    padding-top: 90px;
   }
   #projects .right {
     text-align: center;
@@ -635,6 +650,9 @@ nav li,
   }
   #projects .right h2::after {
     left: 0;
+  }
+  .btn a {
+    font-size: 1rem;
   }
   #projects .image.visible h2:after {
     width: 100%;
