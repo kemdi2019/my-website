@@ -1,5 +1,6 @@
 h2 {
   margin: 20px 0;
+  line-height: 1.1;
 }
 
 section .container {
@@ -238,6 +239,9 @@ ul li {
   #projtitle p {
     -webkit-animation: opacityanim 2s;
             animation: opacityanim 2s;
+  }
+  #projtitle .right {
+    padding-bottom: 30px;
   }
 }
 
